@@ -4,8 +4,8 @@ export type TroopType = '보병' | '창병' | '궁병' | string;
 export interface Hero {
   id: string;
   nameKo: string;
-  nameEn: string;
-  rarity: HeroRarity;
+  nameEn?: string | null;
+  rarity?: HeroRarity | null;
   troopType: TroopType;
   generation?: number | null;
   imageUrl?: string | null;

@@ -9,7 +9,7 @@ export default function HeroCard({ hero }: HeroCardProps) {
   const [imageError, setImageError] = useState(false)
 
   // 등급별 스타일 매핑
-  const getRarityBadge = (rarity: string) => {
+  const getRarityBadge = (rarity?: string | null) => {
     switch (rarity) {
       case '신화':
         return 'bg-amber-500/15 text-amber-300 border-amber-500/30'
@@ -18,7 +18,7 @@ export default function HeroCard({ hero }: HeroCardProps) {
       case '레어':
         return 'bg-blue-500/15 text-blue-300 border-blue-500/30'
       default:
-        return 'bg-slate-800 text-slate-300 border-slate-700'
+        return 'bg-slate-800 text-slate-400 border-slate-700'
     }
   }
 
@@ -40,27 +40,22 @@ export default function HeroCard({ hero }: HeroCardProps) {
 
   return (
     <article className="group relative flex flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-cyan-500/40 hover:shadow-xl hover:shadow-cyan-950/30">
-      {/* 상단 뱃지 영역: 샘플 데이터 안내 & 등급/병종 */}
+      {/* 상단 뱃지 영역: 등급 및 병종 */}
       <div className="mb-3 flex items-center justify-between gap-2">
-        <span className="inline-flex items-center rounded-md bg-amber-400/10 px-2 py-0.5 text-xs font-semibold text-amber-300 ring-1 ring-inset ring-amber-400/20">
-          샘플 데이터
+        <span
+          className={`inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold ${getRarityBadge(
+            hero.rarity,
+          )}`}
+        >
+          {hero.rarity ?? '미확인'}
         </span>
-        <div className="flex items-center gap-1.5 flex-wrap justify-end">
-          <span
-            className={`inline-flex items-center rounded-md border px-2 py-0.5 text-xs font-medium ${getRarityBadge(
-              hero.rarity,
-            )}`}
-          >
-            {hero.rarity}
-          </span>
-          <span
-            className={`inline-flex items-center rounded-md border px-2 py-0.5 text-xs font-medium ${getTroopBadge(
-              hero.troopType,
-            )}`}
-          >
-            {hero.troopType}
-          </span>
-        </div>
+        <span
+          className={`inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-medium ${getTroopBadge(
+            hero.troopType,
+          )}`}
+        >
+          {hero.troopType}
+        </span>
       </div>
 
       {/* 영웅 이미지 또는 대체 화면(Fallback) */}
@@ -92,19 +87,16 @@ export default function HeroCard({ hero }: HeroCardProps) {
                 <circle cx="12" cy="12" r="3" />
               </svg>
             </div>
-            <p className="text-xs font-medium text-slate-400">
-              {hero.imageUrl && imageError ? '이미지 로드 실패' : '이미지 미등록'}
+            <p className="text-xs font-medium text-slate-300">
+              {hero.imageUrl && imageError ? '이미지 로드 실패' : '이미지 준비 중'}
             </p>
-            <span className="mt-1 text-[11px] text-slate-500">
-              대체 화면 표시 중
-            </span>
           </div>
         )}
 
         {/* 세대 표시 태그 */}
         <div className="absolute bottom-2 left-2">
           <span className="inline-flex items-center rounded-md bg-slate-950/80 px-2 py-0.5 text-[11px] font-medium text-slate-300 backdrop-blur-sm border border-slate-800">
-            {hero.generation ? `${hero.generation}세대` : '세대 미확인'}
+            {hero.generation ? `${hero.generation}세대` : '미확인'}
           </span>
         </div>
       </div>
@@ -116,7 +108,7 @@ export default function HeroCard({ hero }: HeroCardProps) {
             {hero.nameKo}
           </h3>
           <p className="text-xs font-medium text-slate-400 break-words mt-0.5">
-            {hero.nameEn}
+            {hero.nameEn ?? '미확인'}
           </p>
         </div>
 
