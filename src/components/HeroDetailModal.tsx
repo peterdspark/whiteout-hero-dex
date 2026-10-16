@@ -142,9 +142,9 @@ export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps)
             {!showFallback ? (
               <img
                 src={hero.imageUrl!}
-                alt={hero.nameKo}
+                alt={`${hero.nameKo} 초상화`}
                 onError={() => setImageError(true)}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain p-2"
               />
             ) : (
               <div className="flex flex-col items-center justify-center p-4 text-center">

@@ -6,7 +6,7 @@
     "rarity": "에픽",
     "troopType": "보병",
     "generation": null,
-    "imageUrl": null
+    "imageUrl": "/assets/heroes/hero_sergey.c18e3630.webp"
   },
   {
     "id": "jessie",
@@ -15,7 +15,7 @@
     "rarity": "에픽",
     "troopType": "창병",
     "generation": null,
-    "imageUrl": null
+    "imageUrl": "/assets/heroes/hero_jessie.6dbbe704.webp"
   },
   {
     "id": "seo-yoon",
@@ -24,6 +24,6 @@
     "rarity": "에픽",
     "troopType": "궁병",
     "generation": null,
-    "imageUrl": null
+    "imageUrl": "/assets/heroes/hero_seo_yoon.30ade209.webp"
   }
 ]
