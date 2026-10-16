@@ -5,9 +5,19 @@
     "name": "버스트 파이어",
     "category": "탐험",
     "description": "부채꼴 범위의 적에게 0.5초마다 공격력에 비례한 피해를 입힘. 지속시간 2초.",
-    "statName": "공격력 대비 피해 비율",
-    "unit": "%",
-    "levels": [55, 60, 65, 70, 75],
+    "effects": [
+      {
+        "statName": "공격력 대비 피해 비율",
+        "unit": "%",
+        "levels": [
+          55,
+          60,
+          65,
+          70,
+          75
+        ]
+      }
+    ],
     "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%A0%9C%EC%8B%9C/",
     "verificationStatus": "게임 화면·위키 대조 완료",
     "verificationBadgeText": "게임 화면·위키 확인",
@@ -19,9 +29,19 @@
     "name": "방어 개조",
     "category": "탐험",
     "description": "자신의 방어력 증가.",
-    "statName": "방어력 증가율",
-    "unit": "%",
-    "levels": [25, 37.5, 50, 62.5, 70],
+    "effects": [
+      {
+        "statName": "방어력 증가율",
+        "unit": "%",
+        "levels": [
+          25,
+          37.5,
+          50,
+          62.5,
+          70
+        ]
+      }
+    ],
     "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%A0%9C%EC%8B%9C/",
     "verificationStatus": "게임 화면·위키 대조 완료",
     "verificationBadgeText": "게임 화면·위키 확인",
@@ -33,9 +53,19 @@
     "name": "무기 개조",
     "category": "탐험",
     "description": "자신의 공격력 증가.",
-    "statName": "공격력 증가율",
-    "unit": "%",
-    "levels": [8, 12, 16, 20, 24],
+    "effects": [
+      {
+        "statName": "공격력 증가율",
+        "unit": "%",
+        "levels": [
+          8,
+          12,
+          16,
+          20,
+          24
+        ]
+      }
+    ],
     "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%A0%9C%EC%8B%9C/",
     "verificationStatus": "위키 기준",
     "verificationBadgeText": "위키 기준",
@@ -47,9 +77,19 @@
     "name": "완전 무장",
     "category": "원정",
     "description": "전체 아군 부대의 주는 피해 증가.",
-    "statName": "피해 증가율",
-    "unit": "%",
-    "levels": [5, 10, 15, 20, 25],
+    "effects": [
+      {
+        "statName": "피해 증가율",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
     "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%A0%9C%EC%8B%9C/",
     "verificationStatus": "위키 기준",
     "verificationBadgeText": "위키 기준",
@@ -61,12 +101,275 @@
     "name": "기계 장벽",
     "category": "원정",
     "description": "전체 아군 부대의 받는 피해 감소.",
-    "statName": "피해 감소율",
-    "unit": "%",
-    "levels": [4, 8, 12, 16, 20],
+    "effects": [
+      {
+        "statName": "피해 감소율",
+        "unit": "%",
+        "levels": [
+          4,
+          8,
+          12,
+          16,
+          20
+        ]
+      }
+    ],
     "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%A0%9C%EC%8B%9C/",
     "verificationStatus": "위키 기준",
     "verificationBadgeText": "위키 기준",
     "evidence": "위키의 레벨별 수치를 기준으로 함. 게임 화면 대조는 미완료 상태임."
+  },
+  {
+    "id": "sergey-shield-assault",
+    "heroId": "sergey",
+    "name": "방패 돌격",
+    "category": "탐험",
+    "description": "무거운 방패로 적에게 부딪혀 공격력에 비례한 범위 피해를 입히며 상대를 넉백시킨다.",
+    "effects": [
+      {
+        "statName": "공격력 대비 범위 피해 비율",
+        "unit": "%",
+        "levels": [
+          200,
+          220,
+          240,
+          260,
+          280
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%84%B8%EB%A5%B4%EA%B2%8C%EC%9D%B4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 공식 한국어 위키 세르게이 페이지 기준."
+  },
+  {
+    "id": "sergey-united-defense",
+    "heroId": "sergey",
+    "name": "연합 방어",
+    "category": "탐험",
+    "description": "세르게이가 사람들을 인솔하여 방어선을 구축하고 모든 아군 영웅의 방어력을 향상시킨다.",
+    "effects": [
+      {
+        "statName": "모든 아군 영웅 방어력 증가율",
+        "unit": "%",
+        "levels": [
+          5,
+          7.5,
+          10,
+          12.5,
+          15
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%84%B8%EB%A5%B4%EA%B2%8C%EC%9D%B4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 공식 한국어 위키 세르게이 페이지 기준."
+  },
+  {
+    "id": "sergey-shield-resistance",
+    "heroId": "sergey",
+    "name": "방패 저항",
+    "category": "탐험",
+    "description": "방패를 강화해서 자신이 받는 피해가 하락한다.",
+    "effects": [
+      {
+        "statName": "자신이 받는 피해 감소율",
+        "unit": "%",
+        "levels": [
+          10,
+          15,
+          20,
+          25,
+          30
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%84%B8%EB%A5%B4%EA%B2%8C%EC%9D%B4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 공식 한국어 위키 세르게이 페이지 기준."
+  },
+  {
+    "id": "sergey-power-of-protection",
+    "heroId": "sergey",
+    "name": "수호의 힘",
+    "category": "원정",
+    "description": "세르게이가 방패로 아군을 보호해서 전체 아군 부대가 받는 피해가 감소한다.",
+    "effects": [
+      {
+        "statName": "전체 아군 부대 받는 피해 감소율",
+        "unit": "%",
+        "levels": [
+          4,
+          8,
+          12,
+          16,
+          20
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%84%B8%EB%A5%B4%EA%B2%8C%EC%9D%B4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 공식 한국어 위키 세르게이 페이지 기준."
+  },
+  {
+    "id": "sergey-weakness-strike",
+    "heroId": "sergey",
+    "name": "약점 타격",
+    "category": "원정",
+    "description": "세르게이가 전체 적군 부대의 공격력을 하락시킨다.",
+    "effects": [
+      {
+        "statName": "전체 적군 부대 공격력 감소율",
+        "unit": "%",
+        "levels": [
+          4,
+          8,
+          12,
+          16,
+          20
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%84%B8%EB%A5%B4%EA%B2%8C%EC%9D%B4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 공식 한국어 위키 세르게이 페이지 기준."
+  },
+  {
+    "id": "seo-yoon-dawn-drumbeat",
+    "heroId": "seo-yoon",
+    "name": "여명의 북소리",
+    "category": "탐험",
+    "description": "힘을 북돋워 주는 북소리로 전의를 불러일으켜 모든 아군 영웅과 호위병의 공격력과 공격 속도를 향상시킨다. 지속시간 4초.",
+    "effects": [
+      {
+        "statName": "모든 아군 영웅 및 호위병 공격력 증가율",
+        "unit": "%",
+        "levels": [
+          1.5,
+          2,
+          2.5,
+          3,
+          3.5
+        ]
+      },
+      {
+        "statName": "모든 아군 영웅 및 호위병 공격 속도 증가율",
+        "unit": "%",
+        "levels": [
+          2.5,
+          3,
+          3.5,
+          4,
+          4.5
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%84%9C%EC%9C%A4/",
+    "verificationStatus": "게임 화면 확인",
+    "verificationBadgeText": "게임 화면 확인",
+    "evidence": "사용자가 제공한 게임 화면(서윤의스킬.jpg) 기준 대조 완료.",
+    "verificationDate": "2026-10-17",
+    "notes": "위키의 기재 수치(공격력 2.5%~4.5%, 공속 4% 고정)가 실제 게임 화면과 상이하여, 사용자 제공 게임 화면(서윤의스킬.jpg)의 수치를 우선 적용함."
+  },
+  {
+    "id": "seo-yoon-frontal-attack",
+    "heroId": "seo-yoon",
+    "name": "정면 공격",
+    "category": "탐험",
+    "description": "타깃의 급소를 겨냥해 있는 힘껏 북채를 던져 타깃에 공격력에 비례한 피해를 준다.",
+    "effects": [
+      {
+        "statName": "공격력 대비 피해 비율",
+        "unit": "%",
+        "levels": [
+          150,
+          165,
+          180,
+          195,
+          210
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%84%9C%EC%9C%A4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 공식 한국어 위키 서윤 페이지 기준."
+  },
+  {
+    "id": "seo-yoon-fierce-wind",
+    "heroId": "seo-yoon",
+    "name": "거센 바람",
+    "category": "탐험",
+    "description": "바람처럼 거센 공세로 일반 공격을 3번 가할 때마다 자신의 공격 속도를 상승시키며, 전투가 끝날 때까지 지속된다.",
+    "effects": [
+      {
+        "statName": "자신의 공격 속도 증가율",
+        "unit": "%",
+        "levels": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%84%9C%EC%9C%A4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 공식 한국어 위키 서윤 페이지 기준."
+  },
+  {
+    "id": "seo-yoon-expedition-drumbeat",
+    "heroId": "seo-yoon",
+    "name": "정벌의 북소리",
+    "category": "원정",
+    "description": "출정 시 서윤은 북을 치며 부대원의 사기를 높이며, 전체 아군 부대의 공격력을 상승시킨다.",
+    "effects": [
+      {
+        "statName": "전체 아군 부대 공격력 증가율",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%84%9C%EC%9C%A4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 공식 한국어 위키 서윤 페이지 기준."
+  },
+  {
+    "id": "seo-yoon-dance-of-healing",
+    "heroId": "seo-yoon",
+    "name": "치유의 춤",
+    "category": "원정",
+    "description": "고대의 전통 의술로 부상병을 보살펴 의무실의 치료 속도를 상승시킨다.",
+    "effects": [
+      {
+        "statName": "의무실 치료 속도 증가율",
+        "unit": "%",
+        "levels": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%84%9C%EC%9C%A4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 공식 한국어 위키 서윤 페이지 기준."
   }
 ]

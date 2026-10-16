@@ -84,7 +84,7 @@ export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps)
 
   // 검증 상태별 뱃지 스타일 매핑
   const getVerificationBadge = (badgeText: string) => {
-    if (badgeText === '게임 화면·위키 확인') {
+    if (badgeText === '게임 화면·위키 확인' || badgeText === '게임 화면 확인') {
       return 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30'
     }
     return 'bg-slate-800/90 text-slate-300 border-slate-700'
@@ -286,25 +286,29 @@ export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps)
                           {skill.description}
                         </p>
 
-                        <div className="pt-1">
-                          <span className="block text-[11px] text-slate-400 font-medium mb-1.5">
-                            {skill.statName} ({skill.unit})
-                          </span>
-                          <div className="grid grid-cols-5 gap-1 sm:gap-1.5">
-                            {skill.levels.map((value, idx) => (
-                              <div
-                                key={idx}
-                                className="flex flex-col items-center justify-center rounded-lg border border-slate-800/90 bg-slate-900/60 p-1 sm:p-1.5 text-center min-w-0"
-                              >
-                                <span className="text-[10px] text-slate-400 font-medium truncate w-full">
-                                  Lv.{idx + 1}
-                                </span>
-                                <span className="text-xs font-bold text-cyan-300 truncate w-full mt-0.5">
-                                  {value}%
-                                </span>
+                        <div className="space-y-2.5 pt-1">
+                          {skill.effects.map((effect, eIdx) => (
+                            <div key={eIdx}>
+                              <span className="block text-[11px] text-slate-400 font-medium mb-1.5">
+                                {effect.statName} ({effect.unit})
+                              </span>
+                              <div className="grid grid-cols-5 gap-1 sm:gap-1.5">
+                                {effect.levels.map((value, lIdx) => (
+                                  <div
+                                    key={lIdx}
+                                    className="flex flex-col items-center justify-center rounded-lg border border-slate-800/90 bg-slate-900/60 p-1 sm:p-1.5 text-center min-w-0"
+                                  >
+                                    <span className="text-[10px] text-slate-400 font-medium truncate w-full">
+                                      Lv.{lIdx + 1}
+                                    </span>
+                                    <span className="text-xs font-bold text-cyan-300 truncate w-full mt-0.5">
+                                      {value}%
+                                    </span>
+                                  </div>
+                                ))}
                               </div>
-                            ))}
-                          </div>
+                            </div>
+                          ))}
                         </div>
                       </article>
                     ))}
@@ -367,25 +371,29 @@ export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps)
                           {skill.description}
                         </p>
 
-                        <div className="pt-1">
-                          <span className="block text-[11px] text-slate-400 font-medium mb-1.5">
-                            {skill.statName} ({skill.unit})
-                          </span>
-                          <div className="grid grid-cols-5 gap-1 sm:gap-1.5">
-                            {skill.levels.map((value, idx) => (
-                              <div
-                                key={idx}
-                                className="flex flex-col items-center justify-center rounded-lg border border-slate-800/90 bg-slate-900/60 p-1 sm:p-1.5 text-center min-w-0"
-                              >
-                                <span className="text-[10px] text-slate-400 font-medium truncate w-full">
-                                  Lv.{idx + 1}
-                                </span>
-                                <span className="text-xs font-bold text-amber-300 truncate w-full mt-0.5">
-                                  {value}%
-                                </span>
+                        <div className="space-y-2.5 pt-1">
+                          {skill.effects.map((effect, eIdx) => (
+                            <div key={eIdx}>
+                              <span className="block text-[11px] text-slate-400 font-medium mb-1.5">
+                                {effect.statName} ({effect.unit})
+                              </span>
+                              <div className="grid grid-cols-5 gap-1 sm:gap-1.5">
+                                {effect.levels.map((value, lIdx) => (
+                                  <div
+                                    key={lIdx}
+                                    className="flex flex-col items-center justify-center rounded-lg border border-slate-800/90 bg-slate-900/60 p-1 sm:p-1.5 text-center min-w-0"
+                                  >
+                                    <span className="text-[10px] text-slate-400 font-medium truncate w-full">
+                                      Lv.{lIdx + 1}
+                                    </span>
+                                    <span className="text-xs font-bold text-amber-300 truncate w-full mt-0.5">
+                                      {value}%
+                                    </span>
+                                  </div>
+                                ))}
                               </div>
-                            ))}
-                          </div>
+                            </div>
+                          ))}
                         </div>
                       </article>
                     ))}
@@ -394,7 +402,7 @@ export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps)
               )}
             </div>
           ) : (
-            /* 스킬 정보가 아직 없는 영웅 (세르게이, 서윤) */
+            /* 스킬 정보가 아직 없는 영웅 */
             <div className="rounded-xl border border-dashed border-slate-800 bg-slate-950/40 p-6 text-center">
               <p className="text-xs font-medium text-slate-400">
                 스킬 정보 준비 중
