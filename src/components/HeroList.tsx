@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import type { Hero } from '../types/hero'
 import HeroCard from './HeroCard'
+import HeroDetailModal from './HeroDetailModal'
 
 interface HeroListProps {
   heroes: Hero[]
@@ -12,10 +13,25 @@ type TroopFilter = (typeof TROOP_OPTIONS)[number]
 export default function HeroList({ heroes }: HeroListProps) {
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedTroop, setSelectedTroop] = useState<TroopFilter>('전체')
+  const [selectedHero, setSelectedHero] = useState<Hero | null>(null)
+  const triggerElementRef = useRef<HTMLElement | null>(null)
 
   const handleReset = () => {
     setSearchQuery('')
     setSelectedTroop('전체')
+  }
+
+  const handleSelectHero = (hero: Hero, element: HTMLElement) => {
+    triggerElementRef.current = element
+    setSelectedHero(hero)
+  }
+
+  const handleCloseModal = () => {
+    setSelectedHero(null)
+    // 모달이 닫힌 후 원래 선택했던 카드로 포커스 복귀
+    requestAnimationFrame(() => {
+      triggerElementRef.current?.focus()
+    })
   }
 
   // 검색어 정제: 앞뒤 공백 제거 및 영문 소문자화
@@ -147,7 +163,11 @@ export default function HeroList({ heroes }: HeroListProps) {
       {filteredHeroes.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {filteredHeroes.map((hero) => (
-            <HeroCard key={hero.id} hero={hero} />
+            <HeroCard
+              key={hero.id}
+              hero={hero}
+              onSelect={(selected, el) => handleSelectHero(selected, el)}
+            />
           ))}
         </div>
       ) : (
@@ -184,6 +204,13 @@ export default function HeroList({ heroes }: HeroListProps) {
           </button>
         </div>
       )}
+
+      {/* 영웅 상세 정보 모달 */}
+      <HeroDetailModal
+        key={selectedHero?.id ?? 'none'}
+        hero={selectedHero}
+        onClose={handleCloseModal}
+      />
     </section>
   )
 }
