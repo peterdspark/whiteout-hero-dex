@@ -1,5 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
+import rawSkills from '../data/skills.json'
 import type { Hero } from '../types/hero'
+import type { Skill } from '../types/skill'
+
+const allSkills = rawSkills as Skill[]
 
 interface HeroDetailModalProps {
   hero: Hero | null
@@ -9,8 +13,6 @@ interface HeroDetailModalProps {
 export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps) {
   const dialogRef = useRef<HTMLDialogElement>(null)
   const [imageError, setImageError] = useState(false)
-
-
 
   // dialog showModal / close 제어 및 배경 스크롤 차단
   useEffect(() => {
@@ -80,7 +82,20 @@ export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps)
     }
   }
 
+  // 검증 상태별 뱃지 스타일 매핑
+  const getVerificationBadge = (badgeText: string) => {
+    if (badgeText === '게임 화면·위키 확인') {
+      return 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30'
+    }
+    return 'bg-slate-800/90 text-slate-300 border-slate-700'
+  }
+
   const showFallback = !hero.imageUrl || imageError
+
+  // 현재 영웅의 스킬 필터링
+  const heroSkills = allSkills.filter((skill) => skill.heroId === hero.id)
+  const explorationSkills = heroSkills.filter((skill) => skill.category === '탐험')
+  const expeditionSkills = heroSkills.filter((skill) => skill.category === '원정')
 
   return (
     <dialog
@@ -88,14 +103,14 @@ export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps)
       onCancel={handleCancel}
       onClick={handleBackdropClick}
       aria-labelledby="hero-detail-modal-title"
-      className="backdrop:bg-slate-950/80 backdrop:backdrop-blur-sm bg-transparent p-0 m-auto max-w-md w-[calc(100%-2rem)] max-h-[90vh] rounded-2xl border border-slate-800 text-slate-100 shadow-2xl focus:outline-none"
+      className="backdrop:bg-slate-950/80 backdrop:backdrop-blur-sm bg-transparent p-0 m-auto max-w-lg w-[calc(100%-2rem)] max-h-[90vh] rounded-2xl border border-slate-800 text-slate-100 shadow-2xl focus:outline-none"
     >
       <div
         className="flex flex-col max-h-[90vh] bg-slate-900/95 backdrop-blur-md rounded-2xl overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         {/* 모달 상단 헤더: 등급/병종 뱃지 및 닫기 버튼 */}
-        <div className="flex items-center justify-between border-b border-slate-800/80 px-4 py-3 sm:px-5 sm:py-3.5">
+        <div className="flex items-center justify-between border-b border-slate-800/80 px-4 py-3 sm:px-5 sm:py-3.5 shrink-0">
           <div className="flex items-center gap-1.5 flex-wrap">
             <span
               className={`inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold ${getRarityBadge(
@@ -136,9 +151,9 @@ export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps)
         </div>
 
         {/* 본문 스크롤 영역: 360px 너비나 낮은 화면에서도 스크롤 가능 */}
-        <div className="overflow-y-auto p-4 sm:p-5 space-y-4">
+        <div className="overflow-y-auto p-4 sm:p-5 space-y-5">
           {/* 이미지 영역 */}
-          <div className="relative aspect-square w-full max-w-[240px] mx-auto overflow-hidden rounded-xl border border-slate-800/80 bg-slate-950/60 flex items-center justify-center">
+          <div className="relative aspect-square w-full max-w-[200px] mx-auto overflow-hidden rounded-xl border border-slate-800/80 bg-slate-950/60 flex items-center justify-center">
             {!showFallback ? (
               <img
                 src={hero.imageUrl!}
@@ -189,7 +204,7 @@ export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps)
             </p>
           </div>
 
-          {/* 상세 정보 표 (임의 데이터 생성 없이 현재 존재하는 필드만 단정하게 구성) */}
+          {/* 상세 정보 표 (등급, 병종, 세대) */}
           <div className="rounded-xl border border-slate-800/80 bg-slate-950/40 p-3.5">
             <dl className="grid grid-cols-3 gap-2 text-center text-xs">
               <div>
@@ -212,10 +227,184 @@ export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps)
               </div>
             </dl>
           </div>
+
+          {/* 스킬 정보 섹션 */}
+          {heroSkills.length > 0 ? (
+            <div className="space-y-5 pt-1">
+              {/* 탐험 스킬 섹션 */}
+              {explorationSkills.length > 0 && (
+                <section aria-labelledby="exploration-skills-title" className="space-y-3">
+                  <div className="border-b border-slate-800/80 pb-2">
+                    <h3
+                      id="exploration-skills-title"
+                      className="text-sm font-bold text-slate-100 flex items-center gap-1.5"
+                    >
+                      <span className="h-1.5 w-1.5 rounded-full bg-cyan-400" />
+                      탐험 스킬
+                    </h3>
+                  </div>
+                  <div className="space-y-3">
+                    {explorationSkills.map((skill) => (
+                      <article
+                        key={skill.id}
+                        className="rounded-xl border border-slate-800/90 bg-slate-950/50 p-3.5 space-y-2.5"
+                      >
+                        <div className="flex items-center justify-between gap-2 flex-wrap">
+                          <h4 className="text-sm font-bold text-slate-100">
+                            {skill.name}
+                          </h4>
+                          <div className="flex items-center gap-2">
+                            <span
+                              className={`inline-flex items-center rounded border px-2 py-0.5 text-[11px] font-medium ${getVerificationBadge(
+                                skill.verificationBadgeText
+                              )}`}
+                            >
+                              {skill.verificationBadgeText}
+                            </span>
+                            <a
+                              href={skill.sourceUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-[11px] text-cyan-400 hover:text-cyan-300 hover:underline inline-flex items-center gap-0.5"
+                            >
+                              위키 출처
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="h-3 w-3"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                aria-hidden="true"
+                              >
+                                <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                                <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+
+                        <p className="text-xs text-slate-300 leading-relaxed">
+                          {skill.description}
+                        </p>
+
+                        <div className="pt-1">
+                          <span className="block text-[11px] text-slate-400 font-medium mb-1.5">
+                            {skill.statName} ({skill.unit})
+                          </span>
+                          <div className="grid grid-cols-5 gap-1 sm:gap-1.5">
+                            {skill.levels.map((value, idx) => (
+                              <div
+                                key={idx}
+                                className="flex flex-col items-center justify-center rounded-lg border border-slate-800/90 bg-slate-900/60 p-1 sm:p-1.5 text-center min-w-0"
+                              >
+                                <span className="text-[10px] text-slate-400 font-medium truncate w-full">
+                                  Lv.{idx + 1}
+                                </span>
+                                <span className="text-xs font-bold text-cyan-300 truncate w-full mt-0.5">
+                                  {value}%
+                                </span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </article>
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              {/* 원정 스킬 섹션 */}
+              {expeditionSkills.length > 0 && (
+                <section aria-labelledby="expedition-skills-title" className="space-y-3">
+                  <div className="border-b border-slate-800/80 pb-2">
+                    <h3
+                      id="expedition-skills-title"
+                      className="text-sm font-bold text-slate-100 flex items-center gap-1.5"
+                    >
+                      <span className="h-1.5 w-1.5 rounded-full bg-amber-400" />
+                      원정 스킬
+                    </h3>
+                  </div>
+                  <div className="space-y-3">
+                    {expeditionSkills.map((skill) => (
+                      <article
+                        key={skill.id}
+                        className="rounded-xl border border-slate-800/90 bg-slate-950/50 p-3.5 space-y-2.5"
+                      >
+                        <div className="flex items-center justify-between gap-2 flex-wrap">
+                          <h4 className="text-sm font-bold text-slate-100">
+                            {skill.name}
+                          </h4>
+                          <div className="flex items-center gap-2">
+                            <span
+                              className={`inline-flex items-center rounded border px-2 py-0.5 text-[11px] font-medium ${getVerificationBadge(
+                                skill.verificationBadgeText
+                              )}`}
+                            >
+                              {skill.verificationBadgeText}
+                            </span>
+                            <a
+                              href={skill.sourceUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-[11px] text-cyan-400 hover:text-cyan-300 hover:underline inline-flex items-center gap-0.5"
+                            >
+                              위키 출처
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="h-3 w-3"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                aria-hidden="true"
+                              >
+                                <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                                <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+
+                        <p className="text-xs text-slate-300 leading-relaxed">
+                          {skill.description}
+                        </p>
+
+                        <div className="pt-1">
+                          <span className="block text-[11px] text-slate-400 font-medium mb-1.5">
+                            {skill.statName} ({skill.unit})
+                          </span>
+                          <div className="grid grid-cols-5 gap-1 sm:gap-1.5">
+                            {skill.levels.map((value, idx) => (
+                              <div
+                                key={idx}
+                                className="flex flex-col items-center justify-center rounded-lg border border-slate-800/90 bg-slate-900/60 p-1 sm:p-1.5 text-center min-w-0"
+                              >
+                                <span className="text-[10px] text-slate-400 font-medium truncate w-full">
+                                  Lv.{idx + 1}
+                                </span>
+                                <span className="text-xs font-bold text-amber-300 truncate w-full mt-0.5">
+                                  {value}%
+                                </span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </article>
+                    ))}
+                  </div>
+                </section>
+              )}
+            </div>
+          ) : (
+            /* 스킬 정보가 아직 없는 영웅 (세르게이, 서윤) */
+            <div className="rounded-xl border border-dashed border-slate-800 bg-slate-950/40 p-6 text-center">
+              <p className="text-xs font-medium text-slate-400">
+                스킬 정보 준비 중
+              </p>
+            </div>
+          )}
         </div>
 
         {/* 모달 하단 푸터: 닫기 버튼 */}
-        <div className="border-t border-slate-800/80 px-4 py-3 sm:px-5 flex justify-end bg-slate-950/40">
+        <div className="border-t border-slate-800/80 px-4 py-3 sm:px-5 flex justify-end bg-slate-950/40 shrink-0">
           <button
             type="button"
             onClick={onClose}
