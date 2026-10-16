@@ -1,0 +1,29 @@
+[
+  {
+    "id": "sample-hero-a",
+    "nameKo": "샘플 영웅 A",
+    "nameEn": "Sample Hero A",
+    "rarity": "신화",
+    "troopType": "보병",
+    "generation": 1,
+    "imageUrl": null
+  },
+  {
+    "id": "sample-hero-b",
+    "nameKo": "샘플 영웅 B",
+    "nameEn": "Sample Hero B",
+    "rarity": "에픽",
+    "troopType": "창병",
+    "generation": 2,
+    "imageUrl": "https://example.com/broken-hero-image.png"
+  },
+  {
+    "id": "sample-hero-c",
+    "nameKo": "샘플 영웅 C",
+    "nameEn": "Sample Hero C",
+    "rarity": "신화",
+    "troopType": "궁병",
+    "generation": null,
+    "imageUrl": null
+  }
+]
