@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import rawSkills from '../data/skills.json'
 import type { Hero } from '../types/hero'
 import type { Skill } from '../types/skill'
+import { getAssetUrl } from '../utils/asset'
 
 const allSkills = rawSkills as Skill[]
 
@@ -167,7 +168,7 @@ export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps)
           <div className="relative aspect-square w-full max-w-[200px] mx-auto overflow-hidden rounded-xl border border-slate-800/80 bg-slate-950/60 flex items-center justify-center">
             {!showFallback ? (
               <img
-                src={hero.imageUrl!}
+                src={getAssetUrl(hero.imageUrl)}
                 alt={`${hero.nameKo} 초상화`}
                 onError={() => setImageError(true)}
                 className="h-full w-full object-contain p-2"

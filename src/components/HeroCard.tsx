@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import type { Hero } from '../types/hero'
+import { getAssetUrl } from '../utils/asset'
 
 interface HeroCardProps {
   hero: Hero
@@ -72,7 +73,7 @@ export default function HeroCard({ hero, onSelect }: HeroCardProps) {
         <span className="relative mb-4 flex aspect-square w-full items-center justify-center overflow-hidden rounded-xl border border-slate-800/80 bg-slate-950/60">
           {!showFallback ? (
             <img
-              src={hero.imageUrl!}
+              src={getAssetUrl(hero.imageUrl)}
               alt={`${hero.nameKo} 초상화`}
               onError={() => setImageError(true)}
               className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
