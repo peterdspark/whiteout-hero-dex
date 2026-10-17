@@ -1,4 +1,4 @@
-export type HeroRarity = '신화' | '에픽' | '레어' | string;
+export type HeroRarity = '레전드' | '신화' | '에픽' | '레어' | string;
 export type TroopType = '보병' | '창병' | '궁병' | string;
 
 export interface Hero {

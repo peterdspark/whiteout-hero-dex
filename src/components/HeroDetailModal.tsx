@@ -57,6 +57,7 @@ export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps)
   // 등급별 스타일 매핑
   const getRarityBadge = (rarity?: string | null) => {
     switch (rarity) {
+      case '레전드':
       case '신화':
         return 'bg-amber-500/15 text-amber-300 border-amber-500/30'
       case '에픽':
@@ -190,7 +191,7 @@ export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps)
             )}
             <div className="absolute bottom-2 left-2">
               <span className="inline-flex items-center rounded-md bg-slate-950/80 px-2 py-0.5 text-[11px] font-medium text-slate-300 backdrop-blur-sm border border-slate-800">
-                {hero.generation ? `${hero.generation}세대` : '미확인'}
+                {hero.generation ? `S${hero.generation}` : '미확인'}
               </span>
             </div>
           </div>
@@ -226,7 +227,7 @@ export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps)
               <div>
                 <dt className="text-slate-400">세대</dt>
                 <dd className="mt-1 font-semibold text-slate-200">
-                  {hero.generation ? `${hero.generation}세대` : '미확인'}
+                  {hero.generation ? `S${hero.generation}` : '미확인'}
                 </dd>
               </div>
               {hero.subtype && (

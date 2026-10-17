@@ -1646,5 +1646,684 @@
     "evidence": "Whiteout Survival 위키 기준.",
     "verificationDate": "2026-10-17",
     "notes": "Whiteout Survival 위키 기준. 도시 과학 기술 연구 속도 상승."
+  },
+  {
+    "id": "natalia-beast-charge",
+    "heroId": "natalia",
+    "name": "맹수 돌격",
+    "category": "탐험",
+    "description": "백곰이 바닥을 세게 내리쳐서 범위 내 적을 튕겨내고 1초간 스턴시키며 공격력 160%/176%/192%/208%/224%의 범위 피해를 입힌다.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          160,
+          176,
+          192,
+          208,
+          224
+        ]
+      },
+      {
+        "statName": "기절 시간",
+        "unit": "초",
+        "levels": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%82%98%ed%83%88%eb%a6%ac%ec%95%84/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 범위 내 적 넉백 및 1초 기절, 공격력 비례 범위 피해."
+  },
+  {
+    "id": "natalia-whip",
+    "heroId": "natalia",
+    "name": "채찍질",
+    "category": "탐험",
+    "description": "채찍을 휘둘러서 목표물에게 공격력 150%/165%/180%/195%/210%의 피해를 입힌다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          150,
+          165,
+          180,
+          195,
+          210
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%82%98%ed%83%88%eb%a6%ac%ec%95%84/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 목표 단일 대상 공격력 비례 피해."
+  },
+  {
+    "id": "natalia-rage-response",
+    "heroId": "natalia",
+    "name": "레인지 리스폰",
+    "category": "탐험",
+    "description": "상대하기 어려운 백곰과 그의 짝. 피해를 입을 때 나탈리아의 공격력이 10% 확률로 + 4%/6%/8%/10%/12% 향상된다. 지속시간 3초(최대 5개 중첩).",
+    "effects": [
+      {
+        "statName": "공격력 증가",
+        "unit": "%",
+        "levels": [
+          4,
+          6,
+          8,
+          10,
+          12
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%82%98%ed%83%88%eb%a6%ac%ec%95%84/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 피격 시 10% 확률로 발동, 지속시간 3초, 최대 5중첩."
+  },
+  {
+    "id": "natalia-feral-protection",
+    "heroId": "natalia",
+    "name": "야성 수호",
+    "category": "원정",
+    "description": "나탈리아가 야수 무리를 지휘해 전사들을 엄호한다. 40%의 확률로 전체 아군 부대가 받는 피해가 10%/20%/30%/40%/50% 감소한다.",
+    "effects": [
+      {
+        "statName": "받는 피해 감소",
+        "unit": "%",
+        "levels": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%82%98%ed%83%88%eb%a6%ac%ec%95%84/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 40% 확률로 전체 아군 부대 받는 피해 감소 발동."
+  },
+  {
+    "id": "natalia-queen-of-the-wild",
+    "heroId": "natalia",
+    "name": "비스트 로드",
+    "category": "원정",
+    "description": "나탈리아가 전원을 격려시켜 전체 아군 부대 공격력이 5%/10%/15%/20%/25% 상승한다.",
+    "effects": [
+      {
+        "statName": "공격력 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%82%98%ed%83%88%eb%a6%ac%ec%95%84/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 아군 부대 공격력 상승."
+  },
+  {
+    "id": "natalia-call-of-the-wild",
+    "heroId": "natalia",
+    "name": "야성의 부름",
+    "category": "원정",
+    "description": "나탈리아가 전투를 돕는 야수를 소환해 전체 아군 부대 피해량이 5%/10%/15%/20%/25% 상승한다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%82%98%ed%83%88%eb%a6%ac%ec%95%84/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 아군 부대 가하는 피해 증가."
+  },
+  {
+    "id": "jeronimo-combo-slash",
+    "heroId": "jeronimo",
+    "name": "삼단 베기",
+    "category": "탐험",
+    "description": "일정 범위 안의 적을 들어올려 3차례 베고, 매번 공격력 160%/176%/192%/208%/224%의 피해를 입힌다.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          160,
+          176,
+          192,
+          208,
+          224
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%a0%9c%eb%a1%9c%eb%8b%88%eb%aa%a8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 범위 내 적 띄움 및 3회 연속 공격력 비례 피해."
+  },
+  {
+    "id": "jeronimo-sword-art",
+    "heroId": "jeronimo",
+    "name": "검기",
+    "category": "탐험",
+    "description": "일반 공격마다 검기를 시전해서 전방 직사각형 범위 내 적에게 공격력 15%/17%/19%/21%/23%의 피해를 입힌다.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          15,
+          17,
+          19,
+          21,
+          23
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%a0%9c%eb%a1%9c%eb%8b%88%eb%aa%a8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 일반 공격 시 전방 직사각형 범위 검기 공격력 비례 피해."
+  },
+  {
+    "id": "jeronimo-lone-wolf",
+    "heroId": "jeronimo",
+    "name": "거만함",
+    "category": "탐험",
+    "description": "도도한 제로니모는 순풍이 불 때 더욱 강해진다. HP가 50% 이상일 때 공격력이 16%/24%/32%/40%/48% 향상된다.",
+    "effects": [
+      {
+        "statName": "공격력 증가",
+        "unit": "%",
+        "levels": [
+          16,
+          24,
+          32,
+          40,
+          48
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%a0%9c%eb%a1%9c%eb%8b%88%eb%aa%a8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. HP 50% 이상 조건 시 공격력 상승."
+  },
+  {
+    "id": "jeronimo-battle-manifesto",
+    "heroId": "jeronimo",
+    "name": "전쟁 선언",
+    "category": "원정",
+    "description": "제로니모의 전투 전 연설로 전체 아군 부대가 입히는 피해가 5%/10%/15%/20%/25% 증가한다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%a0%9c%eb%a1%9c%eb%8b%88%eb%aa%a8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 아군 부대 가하는 피해 증가."
+  },
+  {
+    "id": "jeronimo-swordmentor",
+    "heroId": "jeronimo",
+    "name": "검술 지도",
+    "category": "원정",
+    "description": "검술의 이치를 전수해서 전체 아군 부대의 공격력이 5%/10%/15%/20%/25% 상승한다.",
+    "effects": [
+      {
+        "statName": "공격력 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%a0%9c%eb%a1%9c%eb%8b%88%eb%aa%a8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 아군 부대 공격력 상승."
+  },
+  {
+    "id": "jeronimo-expert-swordsmanship",
+    "heroId": "jeronimo",
+    "name": "정밀 검술",
+    "category": "원정",
+    "description": "제로니모가 전수한 검술은 병사들이 전세를 잡는 데 큰 힘이 되어, 4라운드마다 전체 아군 부대가 주는 피해를 6%/12%/18%/24%/30% 증가시킨다. 2라운드 지속.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          6,
+          12,
+          18,
+          24,
+          30
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%a0%9c%eb%a1%9c%eb%8b%88%eb%aa%a8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 4라운드마다 2라운드 동안 전체 아군 부대 가하는 피해 증가 발동."
+  },
+  {
+    "id": "molly-super-snowball",
+    "heroId": "molly",
+    "name": "초대형 눈덩이",
+    "category": "탐험",
+    "description": "거대한 눈덩이를 발사해서 원형 범위 내 목표물에 공격력 180%/198%/216%/234%/252%의 피해를 입히고 1.5초 동안 얼려버린다.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          180,
+          198,
+          216,
+          234,
+          252
+        ]
+      },
+      {
+        "statName": "빙결 시간",
+        "unit": "초",
+        "levels": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%aa%b0%eb%a6%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 원형 범위 내 목표물 공격력 비례 범위 피해 및 1.5초 빙결."
+  },
+  {
+    "id": "molly-frost-ambush",
+    "heroId": "molly",
+    "name": "눈속 매복",
+    "category": "탐험",
+    "description": "눈밭에 숨어 기습 공격을 행하고 목표물에 공격력 150%/165%/180%/195%/210%의 피해를 입힌다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          150,
+          165,
+          180,
+          195,
+          210
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%aa%b0%eb%a6%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 단일 목표 기습 공격력 비례 피해."
+  },
+  {
+    "id": "molly-youthful-persistence",
+    "heroId": "molly",
+    "name": "소녀의 집착",
+    "category": "탐험",
+    "description": "역경을 통해 몰리의 무한한 잠재력을 이끌어내 HP가 50% 미만일 때 공격 속도가 20%/30%/40%/50%/60% 향상된다.",
+    "effects": [
+      {
+        "statName": "공격 속도 증가",
+        "unit": "%",
+        "levels": [
+          20,
+          30,
+          40,
+          50,
+          60
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%aa%b0%eb%a6%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. HP 50% 미만 조건 시 공격 속도 상승."
+  },
+  {
+    "id": "molly-snows-grace",
+    "heroId": "molly",
+    "name": "눈안개 비호",
+    "category": "원정",
+    "description": "온 하늘에 눈안개를 일으켜 적의 시야를 가린다. 40%의 확률로 전체 아군 부대가 받는 피해가 10%/20%/30%/40%/50% 감소한다.",
+    "effects": [
+      {
+        "statName": "받는 피해 감소",
+        "unit": "%",
+        "levels": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%aa%b0%eb%a6%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "한국어 위키에는 Lv.5 수치(50%)만 기재되어 있으나, 영어 위키의 레벨별 수치 [10, 20, 30, 40, 50]%를 대조 적용함. 40% 확률로 발동."
+  },
+  {
+    "id": "molly-ice-dominion",
+    "heroId": "molly",
+    "name": "빙설의 영역",
+    "category": "원정",
+    "description": "몰리가 가장 실력 발휘할 수 있는 눈밭에서 아군 전체 부대가 공격할 때 50% 확률로 이번 피해를 10%/20%/30%/40%/50% 향상시킨다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%aa%b0%eb%a6%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 아군 전체 부대 공격 시 50% 확률로 발동."
+  },
+  {
+    "id": "molly-youthful-rage",
+    "heroId": "molly",
+    "name": "소녀의 분노",
+    "category": "원정",
+    "description": "몰리가 사람들의 전의를 불태워서 아군 전체 부대가 입히는 피해가 5%/10%/15%/20%/25% 향상된다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%aa%b0%eb%a6%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 아군 전체 부대 가하는 피해 증가."
+  },
+  {
+    "id": "zinman-nail-scatter",
+    "heroId": "zinman",
+    "name": "개틀링건",
+    "category": "탐험",
+    "description": "목표물에 못을 여러 개 연속 발사해서 못 1개마다 공격력 55%/60%/65%/70%/75%의 피해를 입히고, 목표물을 2초 동안 스턴시킨다.",
+    "effects": [
+      {
+        "statName": "못 1개당 피해",
+        "unit": "%",
+        "levels": [
+          55,
+          60,
+          65,
+          70,
+          75
+        ]
+      },
+      {
+        "statName": "기절 시간",
+        "unit": "초",
+        "levels": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%a7%84%eb%a8%bc/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 못 1개당 공격력 비례 피해 및 목표 2초 기절."
+  },
+  {
+    "id": "zinman-quick-defense",
+    "heroId": "zinman",
+    "name": "퀵 디펜스",
+    "category": "탐험",
+    "description": "HP가 50% 미만일 때, 간단한 방어 공사를 빠르게 세워서 자신의 방어력을 50%/75%/100%/125%/150% 향상시킨다.",
+    "effects": [
+      {
+        "statName": "방어력 증가",
+        "unit": "%",
+        "levels": [
+          50,
+          75,
+          100,
+          125,
+          150
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%a7%84%eb%a8%bc/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. HP 50% 미만 조건 시 방어력 상승."
+  },
+  {
+    "id": "zinman-robust",
+    "heroId": "zinman",
+    "name": "열의",
+    "category": "탐험",
+    "description": "넘치는 열정으로 공격 속도가 10%/15%/20%/25%/30% 상승한다.",
+    "effects": [
+      {
+        "statName": "공격 속도 증가",
+        "unit": "%",
+        "levels": [
+          10,
+          15,
+          20,
+          25,
+          30
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%a7%84%eb%a8%bc/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 공격 속도 상승."
+  },
+  {
+    "id": "zinman-implacable",
+    "heroId": "zinman",
+    "name": "난공불락",
+    "category": "원정",
+    "description": "진먼이 구축한 방어선은 견고하고 믿을만합니다. 전체 아군의 방어력이 2%/4%/6%/8%/10% 증가하고, HP가 2%/4%/6%/8%/10% 증가합니다.",
+    "effects": [
+      {
+        "statName": "방어력 증가",
+        "unit": "%",
+        "levels": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ]
+      },
+      {
+        "statName": "부대 HP 증가",
+        "unit": "%",
+        "levels": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%a7%84%eb%a8%bc/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 아군 부대 방어력 및 HP 복합 증가 효과."
+  },
+  {
+    "id": "zinman-bastionist",
+    "heroId": "zinman",
+    "name": "건축 예술",
+    "category": "원정",
+    "description": "진먼의 합리적인 공사 프로세스 관리로 건설에 소모되는 자원이 3%/6%/9%/12%/15% 감소하고, 건물 업그레이드 속도가 3%/6%/9%/12%/15% 증가합니다.",
+    "effects": [
+      {
+        "statName": "건설 자원 소모 감소",
+        "unit": "%",
+        "levels": [
+          3,
+          6,
+          9,
+          12,
+          15
+        ]
+      },
+      {
+        "statName": "건물 업그레이드 속도 증가",
+        "unit": "%",
+        "levels": [
+          3,
+          6,
+          9,
+          12,
+          15
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%a7%84%eb%a8%bc/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 도시 건설 기본 자원 소모 감소 및 건물 업그레이드 속도 상승 복합 효과."
+  },
+  {
+    "id": "zinman-positional-battler",
+    "heroId": "zinman",
+    "name": "진지전의 강자",
+    "category": "원정",
+    "description": "진먼이 지형을 교묘하게 이용해 우세를 점합니다. 전체 아군 부대가 입히는 피해가 5%/10%/15%/20%/25% 증가합니다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%a7%84%eb%a8%bc/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 아군 부대 가하는 피해(살상력) 증가."
   }
 ]

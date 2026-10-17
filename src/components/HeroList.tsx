@@ -10,13 +10,17 @@ interface HeroListProps {
 const TROOP_OPTIONS = ['전체', '보병', '창병', '궁병'] as const
 type TroopFilter = (typeof TROOP_OPTIONS)[number]
 
-const RARITY_OPTIONS = ['전체', '에픽', '레어'] as const
+const RARITY_OPTIONS = ['전체', '레전드', '에픽', '레어'] as const
 type RarityFilter = (typeof RARITY_OPTIONS)[number]
+
+const GENERATION_OPTIONS = ['전체', 'S1'] as const
+type GenerationFilter = (typeof GENERATION_OPTIONS)[number]
 
 export default function HeroList({ heroes }: HeroListProps) {
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedTroop, setSelectedTroop] = useState<TroopFilter>('전체')
   const [selectedRarity, setSelectedRarity] = useState<RarityFilter>('전체')
+  const [selectedGeneration, setSelectedGeneration] = useState<GenerationFilter>('전체')
   const [selectedHero, setSelectedHero] = useState<Hero | null>(null)
   const triggerElementRef = useRef<HTMLElement | null>(null)
 
@@ -24,6 +28,7 @@ export default function HeroList({ heroes }: HeroListProps) {
     setSearchQuery('')
     setSelectedTroop('전체')
     setSelectedRarity('전체')
+    setSelectedGeneration('전체')
   }
 
   const handleSelectHero = (hero: Hero, element: HTMLElement) => {
@@ -42,15 +47,17 @@ export default function HeroList({ heroes }: HeroListProps) {
   // 검색어 정제: 앞뒤 공백 제거 및 영문 소문자화
   const cleanQuery = searchQuery.trim().toLowerCase()
 
-  // 검색, 병종 필터, 등급 필터 AND 조건 적용
+  // 검색, 병종 필터, 등급 필터, 세대 필터 AND 조건 적용
   const filteredHeroes = heroes.filter((hero) => {
     const matchSearch =
       cleanQuery === '' ||
       hero.nameKo.toLowerCase().includes(cleanQuery) ||
       (hero.nameEn ? hero.nameEn.toLowerCase().includes(cleanQuery) : false) ||
       (hero.rarity ? hero.rarity.toLowerCase().includes(cleanQuery) : false) ||
+      (hero.rarity === '레전드' && (cleanQuery === 'legend' || cleanQuery === 'l' || cleanQuery === '전설')) ||
       (hero.rarity === '레어' && (cleanQuery === 'rare' || cleanQuery === 'r')) ||
-      (hero.subtype ? hero.subtype.toLowerCase().includes(cleanQuery) : false)
+      (hero.subtype ? hero.subtype.toLowerCase().includes(cleanQuery) : false) ||
+      (hero.generation && (cleanQuery === `s${hero.generation}` || cleanQuery === `${hero.generation}세대`))
 
     const matchTroop =
       selectedTroop === '전체' || hero.troopType === selectedTroop
@@ -60,7 +67,11 @@ export default function HeroList({ heroes }: HeroListProps) {
       hero.rarity === selectedRarity ||
       (selectedRarity === '레어' && hero.rarity?.toLowerCase() === 'rare')
 
-    return matchSearch && matchTroop && matchRarity
+    const matchGeneration =
+      selectedGeneration === '전체' ||
+      (selectedGeneration === 'S1' && hero.generation === 1)
+
+    return matchSearch && matchTroop && matchRarity && matchGeneration
   })
 
   return (
@@ -115,9 +126,9 @@ export default function HeroList({ heroes }: HeroListProps) {
             )}
           </div>
 
-          {/* 필터 그룹 (등급 & 병종) */}
+          {/* 필터 그룹 (등급, 병종 & 세대) */}
           <div className="flex flex-wrap items-center gap-3">
-            {/* 등급(희귀도) 선택 버튼 그룹 (Rare 필터 지원) */}
+            {/* 등급(희귀도) 선택 버튼 그룹 (레전드, 에픽, 레어) */}
             <div
               role="group"
               aria-label="등급 필터"
@@ -125,6 +136,15 @@ export default function HeroList({ heroes }: HeroListProps) {
             >
               {RARITY_OPTIONS.map((rarity) => {
                 const isSelected = selectedRarity === rarity
+                const activeColor =
+                  rarity === '레전드'
+                    ? 'border-amber-400 bg-amber-500 text-slate-950 shadow-sm shadow-amber-500/20'
+                    : rarity === '에픽'
+                    ? 'border-purple-400 bg-purple-500 text-slate-950 shadow-sm shadow-purple-500/20'
+                    : rarity === '레어'
+                    ? 'border-blue-400 bg-blue-500 text-slate-950 shadow-sm shadow-blue-500/20'
+                    : 'border-cyan-400 bg-cyan-500 text-slate-950 shadow-sm shadow-cyan-500/20'
+
                 return (
                   <button
                     key={rarity}
@@ -133,7 +153,7 @@ export default function HeroList({ heroes }: HeroListProps) {
                     onClick={() => setSelectedRarity(rarity)}
                     className={`flex-1 sm:flex-none rounded-lg px-3 py-2 text-xs font-semibold transition-all duration-200 border ${
                       isSelected
-                        ? 'border-blue-400 bg-blue-500 text-slate-950 shadow-sm shadow-blue-500/20'
+                        ? activeColor
                         : 'border-slate-800 bg-slate-950/60 text-slate-300 hover:border-slate-700 hover:bg-slate-800 hover:text-slate-100'
                     }`}
                   >
@@ -168,6 +188,32 @@ export default function HeroList({ heroes }: HeroListProps) {
                 )
               })}
             </div>
+
+            {/* 세대 선택 버튼 그룹 */}
+            <div
+              role="group"
+              aria-label="세대 필터"
+              className="flex items-center gap-1.5 flex-1 sm:flex-none"
+            >
+              {GENERATION_OPTIONS.map((gen) => {
+                const isSelected = selectedGeneration === gen
+                return (
+                  <button
+                    key={gen}
+                    type="button"
+                    aria-pressed={isSelected}
+                    onClick={() => setSelectedGeneration(gen)}
+                    className={`flex-1 sm:flex-none rounded-lg px-3 py-2 text-xs font-semibold transition-all duration-200 border ${
+                      isSelected
+                        ? 'border-amber-400 bg-amber-500 text-slate-950 shadow-sm shadow-amber-500/20'
+                        : 'border-slate-800 bg-slate-950/60 text-slate-300 hover:border-slate-700 hover:bg-slate-800 hover:text-slate-100'
+                    }`}
+                  >
+                    {gen}
+                  </button>
+                )
+              })}
+            </div>
           </div>
         </div>
 
@@ -177,7 +223,7 @@ export default function HeroList({ heroes }: HeroListProps) {
             표시 중 <strong className="text-cyan-300 font-semibold">{filteredHeroes.length}</strong>명 / 전체{' '}
             <strong className="text-slate-200 font-semibold">{heroes.length}</strong>명
           </div>
-          {(searchQuery !== '' || selectedTroop !== '전체' || selectedRarity !== '전체') && (
+          {(searchQuery !== '' || selectedTroop !== '전체' || selectedRarity !== '전체' || selectedGeneration !== '전체') && (
             <button
               type="button"
               onClick={handleReset}

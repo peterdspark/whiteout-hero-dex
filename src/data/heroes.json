@@ -125,5 +125,45 @@
     "subtype": "성장형",
     "generation": null,
     "imageUrl": "/assets/heroes/hero_jasser.jpg"
+  },
+  {
+    "id": "natalia",
+    "nameKo": "나탈리아",
+    "nameEn": "Natalia",
+    "rarity": "레전드",
+    "troopType": "보병",
+    "subtype": "전투형",
+    "generation": 1,
+    "imageUrl": "/assets/heroes/hero_natalia.png"
+  },
+  {
+    "id": "jeronimo",
+    "nameKo": "제로니모",
+    "nameEn": "Jeronimo",
+    "rarity": "레전드",
+    "troopType": "보병",
+    "subtype": "전투형",
+    "generation": 1,
+    "imageUrl": "/assets/heroes/hero_jeronimo.png"
+  },
+  {
+    "id": "molly",
+    "nameKo": "몰리",
+    "nameEn": "Molly",
+    "rarity": "레전드",
+    "troopType": "창병",
+    "subtype": "전투형",
+    "generation": 1,
+    "imageUrl": "/assets/heroes/hero_molly.png"
+  },
+  {
+    "id": "zinman",
+    "nameKo": "진먼",
+    "nameEn": "Zinman",
+    "rarity": "레전드",
+    "troopType": "궁병",
+    "subtype": "성장형",
+    "generation": 1,
+    "imageUrl": "/assets/heroes/hero_zinman.png"
   }
 ]

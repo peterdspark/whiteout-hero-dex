@@ -12,6 +12,7 @@ export default function HeroCard({ hero, onSelect }: HeroCardProps) {
   // 등급별 스타일 매핑
   const getRarityBadge = (rarity?: string | null) => {
     switch (rarity) {
+      case '레전드':
       case '신화':
         return 'bg-amber-500/15 text-amber-300 border-amber-500/30'
       case '에픽':
@@ -105,7 +106,7 @@ export default function HeroCard({ hero, onSelect }: HeroCardProps) {
           {/* 세대 표시 태그 */}
           <span className="absolute bottom-2 left-2">
             <span className="inline-flex items-center rounded-md bg-slate-950/80 px-2 py-0.5 text-[11px] font-medium text-slate-300 backdrop-blur-sm border border-slate-800">
-              {hero.generation ? `${hero.generation}세대` : '미확인'}
+              {hero.generation ? `S${hero.generation}` : '미확인'}
             </span>
           </span>
         </span>
@@ -130,7 +131,7 @@ export default function HeroCard({ hero, onSelect }: HeroCardProps) {
               <span className="block">
                 <span className="block text-slate-400">세대</span>
                 <span className="block font-semibold text-slate-200 mt-0.5">
-                  {hero.generation ? `${hero.generation}세대` : '미확인'}
+                  {hero.generation ? `S${hero.generation}` : '미확인'}
                 </span>
               </span>
               {hero.subtype && (
