@@ -55,5 +55,15 @@
     "subtype": "성장형",
     "generation": null,
     "imageUrl": "/assets/heroes/hero_charlie.png"
+  },
+  {
+    "id": "cloris",
+    "nameKo": "클로리스",
+    "nameEn": "Cloris",
+    "rarity": "레어",
+    "troopType": "궁병",
+    "subtype": "성장형",
+    "generation": null,
+    "imageUrl": "/assets/heroes/hero_cloris.png"
   }
 ]
