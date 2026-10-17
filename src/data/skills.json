@@ -2859,5 +2859,616 @@
     "evidence": "Whiteout Survival 위키 기준.",
     "verificationDate": "2026-10-17",
     "notes": "Whiteout Survival 위키 기준. 아군 전체 부대 공격 시 50% 확률로 이번 피해 향상 발동."
+  },
+  {
+    "id": "logan-fists-of-destruction",
+    "heroId": "logan",
+    "name": "파멸의 주먹",
+    "category": "탐험",
+    "description": "거대한 힘이 실린 강철 주먹이 지면을 강타해 발생하는 충격파가 전방 목표물에 공격력*120%/132%/144%/156%/168%의 데미지를 입히고 목표물의 공격 속도를 50% 하락시킨다. 지속 시간 4초.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          120,
+          132,
+          144,
+          156,
+          168
+        ]
+      },
+      {
+        "statName": "타깃 공격 속도 감소",
+        "unit": "%",
+        "levels": [
+          50,
+          50,
+          50,
+          50,
+          50
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a1%9c%ea%b1%b4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전방 목표물 대상 공격력 비례 피해 및 목표 공격 속도 50% 감소(지속 시간 4초) 복합 효과."
+  },
+  {
+    "id": "logan-power-suit",
+    "heroId": "logan",
+    "name": "동력 갑옷",
+    "category": "탐험",
+    "description": "놀라운 방어력을 지닌 로건의 동력 갑옷이 공격을 받을 때 8%/10%/12%/14%/16%의 확률로 방어력을 8%/11%/13%/17%/20% 향상시킨다. 지속 시간 2초, 최대 5회 중첩.",
+    "effects": [
+      {
+        "statName": "발동 확률",
+        "unit": "%",
+        "levels": [
+          8,
+          10,
+          12,
+          14,
+          16
+        ]
+      },
+      {
+        "statName": "방어력 증가",
+        "unit": "%",
+        "levels": [
+          8,
+          11,
+          13,
+          17,
+          20
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a1%9c%ea%b1%b4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 피격 시 확률로 방어력 향상 (지속 시간 2초, 최대 5회 중첩)."
+  },
+  {
+    "id": "logan-blustery-strike",
+    "heroId": "logan",
+    "name": "거센 타격",
+    "category": "탐험",
+    "description": "매서운 바람의 펀치를 날려서 부채꼴 범위 내 목표물에 공격력*80%/88%/96%/104%/112%의 데미지를 입히고 30% 확률로 목표물 1초간 스턴시킨다.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          80,
+          88,
+          96,
+          104,
+          112
+        ]
+      },
+      {
+        "statName": "기절 확률",
+        "unit": "%",
+        "levels": [
+          30,
+          30,
+          30,
+          30,
+          30
+        ]
+      },
+      {
+        "statName": "기절 시간",
+        "unit": "초",
+        "levels": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a1%9c%ea%b1%b4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 부채꼴 범위 내 공격력 비례 범위 피해 및 30% 확률로 1초간 스턴(기절) 복합 효과."
+  },
+  {
+    "id": "logan-lions-might",
+    "heroId": "logan",
+    "name": "사자의 위엄",
+    "category": "원정",
+    "description": "로건이 압도적인 기세로 적을 제압하자, 전체 적군 부대의 공격력이 4%/8%/12%/16%/20% 감소한다.",
+    "effects": [
+      {
+        "statName": "적군 부대 공격력 감소",
+        "unit": "%",
+        "levels": [
+          4,
+          8,
+          12,
+          16,
+          20
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a1%9c%ea%b1%b4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 적군 부대의 공격력 감소."
+  },
+  {
+    "id": "logan-lion-intimidation",
+    "heroId": "logan",
+    "name": "라이언 피어스",
+    "category": "원정",
+    "description": "로건이 사자 같은 기세로 상대를 위협해서 전체 아군 부대가 받는 피해를 4%/8%/12%/16%/20% 감소시킨다.",
+    "effects": [
+      {
+        "statName": "받는 피해 감소",
+        "unit": "%",
+        "levels": [
+          4,
+          8,
+          12,
+          16,
+          20
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a1%9c%ea%b1%b4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 아군 부대가 받는 피해 감소."
+  },
+  {
+    "id": "logan-leader-inspiration",
+    "heroId": "logan",
+    "name": "리더십",
+    "category": "원정",
+    "description": "로건이 타고난 카리스마로 모두를 고무시키고, 아군 전체 부대 HP를 5%/10%/15%/20%/25% 향상시킨다.",
+    "effects": [
+      {
+        "statName": "부대 HP 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a1%9c%ea%b1%b4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 아군 부대 HP 향상."
+  },
+  {
+    "id": "mia-fates-finale",
+    "heroId": "mia",
+    "name": "운명의 노래",
+    "category": "탐험",
+    "description": "타로 카드를 던져 적을 공격하여 목표물에 공격력* 270%/297%/324%/351%/378%의 피해를 입히고, 목표물의 공격력을 2초간 20% 감소시키거나 목표물을 1.5초간 스턴시키는 두 가지 효과 중 하나를 랜덤으로 발생시킨다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          270,
+          297,
+          324,
+          351,
+          378
+        ]
+      },
+      {
+        "statName": "적군 공격력 감소",
+        "unit": "%",
+        "levels": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      {
+        "statName": "기절 시간",
+        "unit": "초",
+        "levels": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%af%b8%ec%95%bc/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 목표 대상 공격력 비례 피해를 입힌 뒤, 2초간 공격력 20% 감소 또는 1.5초간 스턴(기절) 중 하나를 무작위로 발동하는 복합 효과."
+  },
+  {
+    "id": "mia-bad-omen",
+    "heroId": "mia",
+    "name": "재앙의 징조",
+    "category": "탐험",
+    "description": "적 1명을 불운에 맞닥뜨리게 해서 미야의 공격력* 50%/55%/60%/65%/70%를 “기본값\"으로 하여 유동적인 피해를 입힌다. 최종 피해량은 \"기본값\"의 5~600% 사이의 랜덤 수.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          50,
+          55,
+          60,
+          65,
+          70
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%af%b8%ec%95%bc/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 미야 공격력 비례 기본값(50/55/60/65/70%) 기준, 최종 피해량은 기본값의 5~600% 사이 무작위 변동 피해."
+  },
+  {
+    "id": "mia-guardian-of-destiny",
+    "heroId": "mia",
+    "name": "운명의 수호",
+    "category": "탐험",
+    "description": "아군 중 HP 백분율이 가장 낮은 영웅을 보호하며 미야의 공격력* 100%/110%/120%/130%/140%를 \"기본값\"으로 하여 HP를 회복시킨다. 최종 회복량은 \"기본값\"의 5~400% 사이의 랜덤 수.",
+    "effects": [
+      {
+        "statName": "단일 아군 HP 회복",
+        "unit": "%",
+        "levels": [
+          100,
+          110,
+          120,
+          130,
+          140
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%af%b8%ec%95%bc/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. HP 백분율이 가장 낮은 아군 영웅 대상 미야 공격력 비례 기본값(100/110/120/130/140%) 기준, 최종 회복량은 기본값의 5~400% 사이 무작위 변동 회복."
+  },
+  {
+    "id": "mia-bad-luck-streak",
+    "heroId": "mia",
+    "name": "액운",
+    "category": "원정",
+    "description": "전체 아군 부대가 공격하면 50% 확률로 적을 불운에 몰아넣어 적군이 받는 피해를 10%/20%/30%/40%/50% 증가시킨다.",
+    "effects": [
+      {
+        "statName": "발동 확률",
+        "unit": "%",
+        "levels": [
+          50,
+          50,
+          50,
+          50,
+          50
+        ]
+      },
+      {
+        "statName": "목표 받는 피해 증가",
+        "unit": "%",
+        "levels": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%af%b8%ec%95%bc/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 아군 부대 공격 시 50% 확률로 적군이 받는 피해 증가."
+  },
+  {
+    "id": "mia-lucky-charm",
+    "heroId": "mia",
+    "name": "행운의 가호",
+    "category": "원정",
+    "description": "미야는 아군에게 행운을 가져다줘 전체 아군 부대가 공격할 때 10%/20%/30%/40%/50% 확률로 해당 피해를 20% 증가시킨다.",
+    "effects": [
+      {
+        "statName": "발동 확률",
+        "unit": "%",
+        "levels": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      },
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%af%b8%ec%95%bc/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 한국어 위키 기준 적용 (아군 공격 시 10/20/30/40/50% 확률로 해당 피해 20% 증가). 영어 위키에서는 50% 확률로 피해 10/20/30/40/50% 증가로 확률과 피해 증가율이 서로 뒤바뀌어 기재되어 있음."
+  },
+  {
+    "id": "mia-ritual-deciphering",
+    "heroId": "mia",
+    "name": "신비로운 해독",
+    "category": "원정",
+    "description": "전투 전에 점을 쳐서 미야가 잠재적인 위험을 미리 알아차리고, 미야의 안내로 40% 확률로 아군 전체 부대가 받는 피해가 10%/20%/30%/40%/50% 하락한다.",
+    "effects": [
+      {
+        "statName": "발동 확률",
+        "unit": "%",
+        "levels": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ]
+      },
+      {
+        "statName": "받는 피해 감소",
+        "unit": "%",
+        "levels": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%af%b8%ec%95%bc/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전투 전 40% 확률로 아군 전체 부대가 받는 피해 감소."
+  },
+  {
+    "id": "greg-righteous-wind",
+    "heroId": "greg",
+    "name": "하늘의 정의",
+    "category": "탐험",
+    "description": "하늘에서 떨어진 새장을 소환하여 범위 내의 적에게 공격력의 *160%/176%/192%/208%/224%에 해당하는 데미지를 입히고 2초간 스턴시킨다.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          160,
+          176,
+          192,
+          208,
+          224
+        ]
+      },
+      {
+        "statName": "기절 시간",
+        "unit": "초",
+        "levels": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ea%b7%b8%eb%a0%89/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 범위 내 적에게 공격력 비례 피해 및 2초간 스턴(기절) 복합 효과."
+  },
+  {
+    "id": "greg-poetic-justice",
+    "heroId": "greg",
+    "name": "권선징악",
+    "category": "탐험",
+    "description": "적을 심판해서 징벌 또는 포상을 내린다. 징벌은 목표물에 그렉 공격력*220%/240%/260%/280%/300%에 해당하는 피해를 입히고, 포상은 목표물에 그렉 공격력*50%에 해당하는 HP를 회복시킨다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          220,
+          240,
+          260,
+          280,
+          300
+        ]
+      },
+      {
+        "statName": "HP 회복",
+        "unit": "%",
+        "levels": [
+          50,
+          50,
+          50,
+          50,
+          50
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ea%b7%b8%eb%a0%89/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 적을 심판하여 징벌(공격력 220/240/260/280/300% 피해) 또는 포상(그렉 공격력 50% HP 회복) 발동."
+  },
+  {
+    "id": "greg-fair-judgment",
+    "heroId": "greg",
+    "name": "공정한 심판",
+    "category": "탐험",
+    "description": "적이 저지른 죄에 대해 엄중한 처벌을 받게 해서 적이 받는 피해가 3초 동안 10%/15%/20%/25%/30% 증가한다.",
+    "effects": [
+      {
+        "statName": "목표 받는 피해 증가",
+        "unit": "%",
+        "levels": [
+          10,
+          15,
+          20,
+          25,
+          30
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ea%b7%b8%eb%a0%89/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 적이 받는 피해가 3초간 10/15/20/25/30% 증가."
+  },
+  {
+    "id": "greg-sword-of-justice",
+    "heroId": "greg",
+    "name": "정의의 검",
+    "category": "원정",
+    "description": "병사들을 천하무적 정의의 검으로 변모시켜 20% 확률로 전체 아군 부대의 피해를 8%/16%/24%/32%/40% 증가시킨다. 3라운드 지속.",
+    "effects": [
+      {
+        "statName": "발동 확률",
+        "unit": "%",
+        "levels": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          8,
+          16,
+          24,
+          32,
+          40
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ea%b7%b8%eb%a0%89/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 20% 확률로 3라운드 동안 전체 아군 부대 피해 증가."
+  },
+  {
+    "id": "greg-deterrence-of-law",
+    "heroId": "greg",
+    "name": "율법",
+    "category": "원정",
+    "description": "율법의 위엄으로 악당을 겁줘서 전체 아군 부대가 공격할 때 20% 확률로 적의 피해를 10%/20%/30%/40%/50% 감소시킨다. 2라운드 지속.",
+    "effects": [
+      {
+        "statName": "발동 확률",
+        "unit": "%",
+        "levels": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      {
+        "statName": "적군 가하는 피해 감소",
+        "unit": "%",
+        "levels": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ea%b7%b8%eb%a0%89/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 아군 부대 공격 시 20% 확률로 2라운드 동안 적군이 가하는 피해 감소."
+  },
+  {
+    "id": "greg-law-and-order",
+    "heroId": "greg",
+    "name": "질서의 비호",
+    "category": "원정",
+    "description": "질서와 율법에 대한 신념이 모두를 고무시켜서 아군 전체 부대의 HP가 5%/10%/15%/20%/25% 향상된다.",
+    "effects": [
+      {
+        "statName": "부대 HP 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ea%b7%b8%eb%a0%89/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 아군 전체 부대의 HP 향상."
   }
 ]

@@ -195,5 +195,35 @@
     "subtype": "전투형",
     "generation": 2,
     "imageUrl": "/assets/heroes/hero_alonso.png"
+  },
+  {
+    "id": "logan",
+    "nameKo": "로건",
+    "nameEn": "Logan",
+    "rarity": "레전드",
+    "troopType": "보병",
+    "subtype": "전투형",
+    "generation": 3,
+    "imageUrl": "/assets/heroes/hero_logan.png"
+  },
+  {
+    "id": "mia",
+    "nameKo": "미야",
+    "nameEn": "Mia",
+    "rarity": "레전드",
+    "troopType": "창병",
+    "subtype": "전투형",
+    "generation": 3,
+    "imageUrl": "/assets/heroes/hero_mia.png"
+  },
+  {
+    "id": "greg",
+    "nameKo": "그렉",
+    "nameEn": "Greg",
+    "rarity": "레전드",
+    "troopType": "궁병",
+    "subtype": "전투형",
+    "generation": 3,
+    "imageUrl": "/assets/heroes/hero_greg.png"
   }
 ]
