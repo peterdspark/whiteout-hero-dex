@@ -62,6 +62,7 @@ export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps)
       case '에픽':
         return 'bg-purple-500/15 text-purple-300 border-purple-500/30'
       case '레어':
+      case 'Rare':
         return 'bg-blue-500/15 text-blue-300 border-blue-500/30'
       default:
         return 'bg-slate-800 text-slate-400 border-slate-700'
@@ -204,9 +205,9 @@ export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps)
             </p>
           </div>
 
-          {/* 상세 정보 표 (등급, 병종, 세대) */}
+          {/* 상세 정보 표 (등급, 병종, 세대, 세부 유형) */}
           <div className="rounded-xl border border-slate-800/80 bg-slate-950/40 p-3.5">
-            <dl className="grid grid-cols-3 gap-2 text-center text-xs">
+            <dl className={`grid ${hero.subtype ? 'grid-cols-4' : 'grid-cols-3'} gap-2 text-center text-xs`}>
               <div>
                 <dt className="text-slate-400">등급</dt>
                 <dd className="mt-1 font-semibold text-slate-200">
@@ -225,6 +226,14 @@ export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps)
                   {hero.generation ? `${hero.generation}세대` : '미확인'}
                 </dd>
               </div>
+              {hero.subtype && (
+                <div>
+                  <dt className="text-slate-400">세부 유형</dt>
+                  <dd className="mt-1 font-semibold text-slate-200">
+                    {hero.subtype}
+                  </dd>
+                </div>
+              )}
             </dl>
           </div>
 

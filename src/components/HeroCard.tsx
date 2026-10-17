@@ -17,6 +17,7 @@ export default function HeroCard({ hero, onSelect }: HeroCardProps) {
       case '에픽':
         return 'bg-purple-500/15 text-purple-300 border-purple-500/30'
       case '레어':
+      case 'Rare':
         return 'bg-blue-500/15 text-blue-300 border-blue-500/30'
       default:
         return 'bg-slate-800 text-slate-400 border-slate-700'
@@ -121,7 +122,7 @@ export default function HeroCard({ hero, onSelect }: HeroCardProps) {
           </span>
 
           <span className="mt-4 block border-t border-slate-800/80 pt-3 w-full">
-            <span className="grid grid-cols-2 gap-2 text-xs">
+            <span className={`grid ${hero.subtype ? 'grid-cols-3' : 'grid-cols-2'} gap-2 text-xs`}>
               <span className="block">
                 <span className="block text-slate-400">병종</span>
                 <span className="block font-semibold text-slate-200 mt-0.5">{hero.troopType}</span>
@@ -132,6 +133,12 @@ export default function HeroCard({ hero, onSelect }: HeroCardProps) {
                   {hero.generation ? `${hero.generation}세대` : '미확인'}
                 </span>
               </span>
+              {hero.subtype && (
+                <span className="block">
+                  <span className="block text-slate-400">유형</span>
+                  <span className="block font-semibold text-slate-200 mt-0.5">{hero.subtype}</span>
+                </span>
+              )}
             </span>
           </span>
         </span>

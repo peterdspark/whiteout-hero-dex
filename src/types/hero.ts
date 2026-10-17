@@ -9,4 +9,5 @@ export interface Hero {
   troopType: TroopType;
   generation?: number | null;
   imageUrl?: string | null;
+  subtype?: string | null;
 }

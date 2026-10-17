@@ -10,15 +10,20 @@ interface HeroListProps {
 const TROOP_OPTIONS = ['전체', '보병', '창병', '궁병'] as const
 type TroopFilter = (typeof TROOP_OPTIONS)[number]
 
+const RARITY_OPTIONS = ['전체', '에픽', '레어'] as const
+type RarityFilter = (typeof RARITY_OPTIONS)[number]
+
 export default function HeroList({ heroes }: HeroListProps) {
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedTroop, setSelectedTroop] = useState<TroopFilter>('전체')
+  const [selectedRarity, setSelectedRarity] = useState<RarityFilter>('전체')
   const [selectedHero, setSelectedHero] = useState<Hero | null>(null)
   const triggerElementRef = useRef<HTMLElement | null>(null)
 
   const handleReset = () => {
     setSearchQuery('')
     setSelectedTroop('전체')
+    setSelectedRarity('전체')
   }
 
   const handleSelectHero = (hero: Hero, element: HTMLElement) => {
@@ -37,24 +42,32 @@ export default function HeroList({ heroes }: HeroListProps) {
   // 검색어 정제: 앞뒤 공백 제거 및 영문 소문자화
   const cleanQuery = searchQuery.trim().toLowerCase()
 
-  // 검색과 병종 필터 AND 조건 적용
+  // 검색, 병종 필터, 등급 필터 AND 조건 적용
   const filteredHeroes = heroes.filter((hero) => {
-    const matchName =
+    const matchSearch =
       cleanQuery === '' ||
       hero.nameKo.toLowerCase().includes(cleanQuery) ||
-      (hero.nameEn ? hero.nameEn.toLowerCase().includes(cleanQuery) : false)
+      (hero.nameEn ? hero.nameEn.toLowerCase().includes(cleanQuery) : false) ||
+      (hero.rarity ? hero.rarity.toLowerCase().includes(cleanQuery) : false) ||
+      (hero.rarity === '레어' && (cleanQuery === 'rare' || cleanQuery === 'r')) ||
+      (hero.subtype ? hero.subtype.toLowerCase().includes(cleanQuery) : false)
 
     const matchTroop =
       selectedTroop === '전체' || hero.troopType === selectedTroop
 
-    return matchName && matchTroop
+    const matchRarity =
+      selectedRarity === '전체' ||
+      hero.rarity === selectedRarity ||
+      (selectedRarity === '레어' && hero.rarity?.toLowerCase() === 'rare')
+
+    return matchSearch && matchTroop && matchRarity
   })
 
   return (
     <section className="w-full space-y-6">
-      {/* 컨트롤 영역: 검색창 & 병종 필터 */}
+      {/* 컨트롤 영역: 검색창 & 등급/병종 필터 */}
       <div className="flex flex-col gap-4 rounded-2xl border border-slate-800 bg-slate-900/40 p-4 sm:p-5 backdrop-blur-sm">
-        <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
+        <div className="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
           {/* 검색 입력란 */}
           <div className="relative flex-1">
             <label htmlFor="hero-search-input" className="sr-only">
@@ -80,7 +93,7 @@ export default function HeroList({ heroes }: HeroListProps) {
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="영웅 이름 검색 (예: 세르게이, Jessie)..."
+              placeholder="영웅 이름 검색 (예: 스미스, Smith, 세르게이)..."
               className="w-full rounded-xl border border-slate-700/80 bg-slate-950/80 py-2.5 pl-10 pr-4 text-sm text-slate-100 placeholder-slate-500 transition-colors focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
             />
             {searchQuery && (
@@ -102,30 +115,59 @@ export default function HeroList({ heroes }: HeroListProps) {
             )}
           </div>
 
-          {/* 병종 선택 버튼 그룹 */}
-          <div
-            role="group"
-            aria-label="병종 필터"
-            className="flex items-center gap-1.5 flex-wrap sm:flex-nowrap"
-          >
-            {TROOP_OPTIONS.map((troop) => {
-              const isSelected = selectedTroop === troop
-              return (
-                <button
-                  key={troop}
-                  type="button"
-                  aria-pressed={isSelected}
-                  onClick={() => setSelectedTroop(troop)}
-                  className={`flex-1 sm:flex-none rounded-lg px-3 py-2 text-xs font-semibold transition-all duration-200 border ${
-                    isSelected
-                      ? 'border-cyan-400 bg-cyan-500 text-slate-950 shadow-sm shadow-cyan-500/20'
-                      : 'border-slate-800 bg-slate-950/60 text-slate-300 hover:border-slate-700 hover:bg-slate-800 hover:text-slate-100'
-                  }`}
-                >
-                  {troop}
-                </button>
-              )
-            })}
+          {/* 필터 그룹 (등급 & 병종) */}
+          <div className="flex flex-wrap items-center gap-3">
+            {/* 등급(희귀도) 선택 버튼 그룹 (Rare 필터 지원) */}
+            <div
+              role="group"
+              aria-label="등급 필터"
+              className="flex items-center gap-1.5 flex-1 sm:flex-none"
+            >
+              {RARITY_OPTIONS.map((rarity) => {
+                const isSelected = selectedRarity === rarity
+                return (
+                  <button
+                    key={rarity}
+                    type="button"
+                    aria-pressed={isSelected}
+                    onClick={() => setSelectedRarity(rarity)}
+                    className={`flex-1 sm:flex-none rounded-lg px-3 py-2 text-xs font-semibold transition-all duration-200 border ${
+                      isSelected
+                        ? 'border-blue-400 bg-blue-500 text-slate-950 shadow-sm shadow-blue-500/20'
+                        : 'border-slate-800 bg-slate-950/60 text-slate-300 hover:border-slate-700 hover:bg-slate-800 hover:text-slate-100'
+                    }`}
+                  >
+                    {rarity}
+                  </button>
+                )
+              })}
+            </div>
+
+            {/* 병종 선택 버튼 그룹 */}
+            <div
+              role="group"
+              aria-label="병종 필터"
+              className="flex items-center gap-1.5 flex-1 sm:flex-none"
+            >
+              {TROOP_OPTIONS.map((troop) => {
+                const isSelected = selectedTroop === troop
+                return (
+                  <button
+                    key={troop}
+                    type="button"
+                    aria-pressed={isSelected}
+                    onClick={() => setSelectedTroop(troop)}
+                    className={`flex-1 sm:flex-none rounded-lg px-3 py-2 text-xs font-semibold transition-all duration-200 border ${
+                      isSelected
+                        ? 'border-cyan-400 bg-cyan-500 text-slate-950 shadow-sm shadow-cyan-500/20'
+                        : 'border-slate-800 bg-slate-950/60 text-slate-300 hover:border-slate-700 hover:bg-slate-800 hover:text-slate-100'
+                    }`}
+                  >
+                    {troop}
+                  </button>
+                )
+              })}
+            </div>
           </div>
         </div>
 
@@ -135,7 +177,7 @@ export default function HeroList({ heroes }: HeroListProps) {
             표시 중 <strong className="text-cyan-300 font-semibold">{filteredHeroes.length}</strong>명 / 전체{' '}
             <strong className="text-slate-200 font-semibold">{heroes.length}</strong>명
           </div>
-          {(searchQuery !== '' || selectedTroop !== '전체') && (
+          {(searchQuery !== '' || selectedTroop !== '전체' || selectedRarity !== '전체') && (
             <button
               type="button"
               onClick={handleReset}
@@ -193,7 +235,7 @@ export default function HeroList({ heroes }: HeroListProps) {
             조건에 맞는 영웅이 없습니다
           </p>
           <p className="mt-1 text-xs text-slate-400">
-            검색어 오타를 확인하거나 병종 필터를 변경해 보세요.
+            검색어 오타를 확인하거나 필터를 변경해 보세요.
           </p>
           <button
             type="button"

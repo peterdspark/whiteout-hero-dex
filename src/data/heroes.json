@@ -25,5 +25,15 @@
     "troopType": "궁병",
     "generation": null,
     "imageUrl": "/assets/heroes/hero_seo_yoon.30ade209.webp"
+  },
+  {
+    "id": "smith",
+    "nameKo": "스미스",
+    "nameEn": "Smith",
+    "rarity": "레어",
+    "troopType": "보병",
+    "subtype": "성장형",
+    "generation": null,
+    "imageUrl": "/assets/heroes/hero_smith.png"
   }
 ]
