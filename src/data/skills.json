@@ -2325,5 +2325,539 @@
     "evidence": "Whiteout Survival 위키 기준.",
     "verificationDate": "2026-10-17",
     "notes": "Whiteout Survival 위키 기준. 전체 아군 부대 가하는 피해(살상력) 증가."
+  },
+  {
+    "id": "flint-fires-of-vengeance",
+    "heroId": "flint",
+    "name": "복수의 불꽃",
+    "category": "탐험",
+    "description": "뜨겁게 불타오르는 불꽃을 뿜어내 적을 태워버리며 0.5초마다 공격력*60%/66%/72%/78%/84%의 피해를 입히고, 목표물이 받는 피해를 10%/15%/20%/25%/30% 향상시킨다. 지속시간 2초.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          60,
+          66,
+          72,
+          78,
+          84
+        ]
+      },
+      {
+        "statName": "목표 받는 피해 증가",
+        "unit": "%",
+        "levels": [
+          10,
+          15,
+          20,
+          25,
+          30
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ed%94%8c%eb%a6%b0%ed%8a%b8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 0.5초마다 공격력 비례 피해 및 목표 받는 피해 증가(지속시간 2초) 복합 효과."
+  },
+  {
+    "id": "flint-incinerator",
+    "heroId": "flint",
+    "name": "분노의 화염",
+    "category": "탐험",
+    "description": "고통은 플린트의 잠재력을 끌어올린다. HP가 50% 미만일 때 자신의 최대 HP 20%/25%/30%/35%/40%의 HP를 즉시 회복한다. 전투당 1회만 활성화 가능.",
+    "effects": [
+      {
+        "statName": "최대 HP 비례 회복",
+        "unit": "%",
+        "levels": [
+          20,
+          25,
+          30,
+          35,
+          40
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ed%94%8c%eb%a6%b0%ed%8a%b8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. HP 50% 미만 시 최대 HP 비례 즉시 회복 (전투당 1회 발동)."
+  },
+  {
+    "id": "flint-heat-diffusion",
+    "heroId": "flint",
+    "name": "열원 확산",
+    "category": "탐험",
+    "description": "함께 싸우는 전우들에게 불꽃으로 추위를 없애주어 아군 전체 영웅의 공격 속도를 3%/4%/5%/6%/7% 향상시킨다.",
+    "effects": [
+      {
+        "statName": "공격 속도 증가",
+        "unit": "%",
+        "levels": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ed%94%8c%eb%a6%b0%ed%8a%b8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 아군 전체 영웅 공격 속도 상승."
+  },
+  {
+    "id": "flint-pyromaniac",
+    "heroId": "flint",
+    "name": "불타는 들판",
+    "category": "원정",
+    "description": "돌멩이를 부딪혀서 튄 스파크에도 들판을 불태울 수 있다. 플린트가 이끄는 방패병이 주는 피해가 20%/40%/60%/80%/100% 상승한다.",
+    "effects": [
+      {
+        "statName": "보병 가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          20,
+          40,
+          60,
+          80,
+          100
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ed%94%8c%eb%a6%b0%ed%8a%b8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 플린트가 통솔하는 보병(방패병)이 입히는 피해 증가."
+  },
+  {
+    "id": "flint-burning-resolve",
+    "heroId": "flint",
+    "name": "뜨거운 의지",
+    "category": "원정",
+    "description": "불꽃으로 추위를 없애고 전투의 열정을 불태운다. 아군 전체 부대의 공격력이 5%/10%/15%/20%/25% 향상된다.",
+    "effects": [
+      {
+        "statName": "공격력 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ed%94%8c%eb%a6%b0%ed%8a%b8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 아군 부대 공격력 상승."
+  },
+  {
+    "id": "flint-immolation",
+    "heroId": "flint",
+    "name": "사나운 불길",
+    "category": "원정",
+    "description": "불길이 모든 것을 삼킨다! 플린트의 분노로 전체 아군 부대 파괴력이 5%/10%/15%/20%/25% 상승한다.",
+    "effects": [
+      {
+        "statName": "살상력 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ed%94%8c%eb%a6%b0%ed%8a%b8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 아군 부대 살상력(파괴력) 상승."
+  },
+  {
+    "id": "philly-first-aid",
+    "heroId": "philly",
+    "name": "응급 치료",
+    "category": "탐험",
+    "description": "필리의 뛰어난 의술로 아군 모든 영웅에게 필리의 공격력*200%/220%/240%/260%/280%의 HP를 회복시킨다.",
+    "effects": [
+      {
+        "statName": "HP 회복",
+        "unit": "%",
+        "levels": [
+          200,
+          220,
+          240,
+          260,
+          280
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ed%95%84%eb%a6%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 아군 전체 영웅 대상 필리 공격력 비례 HP 즉시 회복 (한국어 위키의 200 오타는 영어 위키 200% 대조 적용)."
+  },
+  {
+    "id": "philly-restorative-hands",
+    "heroId": "philly",
+    "name": "탁월한 의술",
+    "category": "탐험",
+    "description": "죽음의 신과 겨룰만한 필리의 기교로 HP 백분율이 가장 낮은 아군 영웅에게 필리의 공격력*100%/110%/120%/130%/140%의 HP를 회복시킨다.",
+    "effects": [
+      {
+        "statName": "단일 아군 HP 회복",
+        "unit": "%",
+        "levels": [
+          100,
+          110,
+          120,
+          130,
+          140
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ed%95%84%eb%a6%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. HP 비율이 가장 낮은 아군 영웅 대상 필리 공격력 비례 HP 회복."
+  },
+  {
+    "id": "philly-paralytic-lotion",
+    "heroId": "philly",
+    "name": "마비 독소",
+    "category": "탐험",
+    "description": "목표물을 중독시켜서 필리의 공격력*140%/154%/168%/182%/196%의 피해를 입히고, 상대가 1초 동안 움직일 수 없도록 한다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          140,
+          154,
+          168,
+          182,
+          196
+        ]
+      },
+      {
+        "statName": "행동 불가 시간",
+        "unit": "초",
+        "levels": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ed%95%84%eb%a6%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 단일 목표 중독 피해 및 1초 행동 불가(기절/마비)."
+  },
+  {
+    "id": "philly-vigor-tactics",
+    "heroId": "philly",
+    "name": "강건의 비결",
+    "category": "원정",
+    "description": "필리의 요리가 병사들을 강화해 아군 부대 공격력이 3%/6%/9%/12%/15%, 방어력이 2%/4%/6%/8%/10% 증가한다.",
+    "effects": [
+      {
+        "statName": "공격력 증가",
+        "unit": "%",
+        "levels": [
+          3,
+          6,
+          9,
+          12,
+          15
+        ]
+      },
+      {
+        "statName": "방어력 증가",
+        "unit": "%",
+        "levels": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ed%95%84%eb%a6%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 아군 부대 공격력 및 방어력 복합 증가."
+  },
+  {
+    "id": "philly-dosage-boost",
+    "heroId": "philly",
+    "name": "강화 약물",
+    "category": "원정",
+    "description": "필리가 비법으로 제조한 물약으로 전사들의 신체 기능을 강화시켜서, 아군 전체 부대가 공격할 때 25% 확률로 120%/140%/160%/180%/200%의 피해를 입힌다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          120,
+          140,
+          160,
+          180,
+          200
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ed%95%84%eb%a6%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 아군 전체 부대 공격 시 25% 확률로 발동."
+  },
+  {
+    "id": "philly-energizing-shot",
+    "heroId": "philly",
+    "name": "각성 주사",
+    "category": "원정",
+    "description": "필리의 비밀 조제약이 병사들의 전투 집중력을 끌어올린다. 40%의 확률로 전체 아군 부대가 받는 피해가 10%/20%/30%/40%/50% 감소한다.",
+    "effects": [
+      {
+        "statName": "받는 피해 감소",
+        "unit": "%",
+        "levels": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ed%95%84%eb%a6%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 아군 부대 피격 시 40% 확률로 받는 피해 감소 발동."
+  },
+  {
+    "id": "alonso-trapnet",
+    "heroId": "alonso",
+    "name": "강력한 그물",
+    "category": "탐험",
+    "description": "목표 구역에 그물망을 던져서 공격력* 200%/220%/240%/260%/280% 의 범위 피해를 입히고, 적을 1.5초 동안 움직일 수 없도록 만든다.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          200,
+          220,
+          240,
+          260,
+          280
+        ]
+      },
+      {
+        "statName": "행동 불가 시간",
+        "unit": "초",
+        "levels": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%95%8c%eb%a1%a0%ec%86%8c/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 목표 구역 범위 공격력 비례 피해 및 1.5초간 속박(행동 불가)."
+  },
+  {
+    "id": "alonso-tidal-force",
+    "heroId": "alonso",
+    "name": "기조력",
+    "category": "탐험",
+    "description": "목표물에 막강한 위력을 자랑하는 파도와 같은 기세의 작살을 던져서 공격력* 50%/55%/60%/65%/70%의 범위 피해를 입힌다.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          50,
+          55,
+          60,
+          65,
+          70
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%95%8c%eb%a1%a0%ec%86%8c/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 작살 투척을 통한 공격력 비례 범위 피해."
+  },
+  {
+    "id": "alonso-harpoon-blast",
+    "heroId": "alonso",
+    "name": "작살 크러쉬",
+    "category": "탐험",
+    "description": "알론소가 무거운 작살로 적을 가격한다. 매 8/7/7/6/5 회 일반 공격 후 다음 공격은 목표물을 0.2/0.2/0.4/0.4/0.5초 동안 기절시킨다.",
+    "effects": [
+      {
+        "statName": "기절 시간",
+        "unit": "초",
+        "levels": [
+          0.2,
+          0.2,
+          0.4,
+          0.4,
+          0.5
+        ]
+      },
+      {
+        "statName": "필요 일반 공격 횟수",
+        "unit": "회",
+        "levels": [
+          8,
+          7,
+          7,
+          6,
+          5
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%95%8c%eb%a1%a0%ec%86%8c/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 일반 공격 횟수 조건 충족 시 다음 공격 목표 기절 복합 효과."
+  },
+  {
+    "id": "alonso-onslaught",
+    "heroId": "alonso",
+    "name": "거센 파도",
+    "category": "원정",
+    "description": "알론소의 공세가 거센 파도처럼 몰아쳐, 보는 이들을 압도한다. 40%의 확률로 전체 아군 부대 파괴력이 10%/20%/30%/40%/50% 상승한다.",
+    "effects": [
+      {
+        "statName": "살상력 증가",
+        "unit": "%",
+        "levels": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%95%8c%eb%a1%a0%ec%86%8c/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 40% 확률로 전체 아군 부대 살상력(파괴력) 상승."
+  },
+  {
+    "id": "alonso-iron-strength",
+    "heroId": "alonso",
+    "name": "굳센 의지",
+    "category": "원정",
+    "description": "알론소가 굽힐 수 없는 의지로 사람들을 격려해서 아군 전체 부대가 공격할 때 10%/20%/30%/40%/50% 확률로 적이 가하는 피해를 40% 감소시킨다. 2라운드 지속.",
+    "effects": [
+      {
+        "statName": "발동 확률",
+        "unit": "%",
+        "levels": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      },
+      {
+        "statName": "적군 가하는 피해 감소",
+        "unit": "%",
+        "levels": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%95%8c%eb%a1%a0%ec%86%8c/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "한국어 위키(발동 확률 10~50%, 적 가하는 피해 40% 감소)를 기준으로 적용함. 영어 위키(20% 확률로 적 가하는 피해 10~50% 감소)와 구조적 차이가 존재하며 지속시간은 2라운드로 동일함."
+  },
+  {
+    "id": "alonso-poison-harpoon",
+    "heroId": "alonso",
+    "name": "극독의 작살",
+    "category": "원정",
+    "description": "알론소가 무기에 극독을 발라 아군 전체 부대가 공격할 때 50% 확률로 이번 피해를 10%/20%/30%/40%/50% 향상시킨다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%95%8c%eb%a1%a0%ec%86%8c/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 아군 전체 부대 공격 시 50% 확률로 이번 피해 향상 발동."
   }
 ]

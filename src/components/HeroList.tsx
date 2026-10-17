@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useMemo, useRef, useState } from 'react'
 import type { Hero } from '../types/hero'
 import HeroCard from './HeroCard'
 import HeroDetailModal from './HeroDetailModal'
@@ -13,14 +13,23 @@ type TroopFilter = (typeof TROOP_OPTIONS)[number]
 const RARITY_OPTIONS = ['전체', '레전드', '에픽', '레어'] as const
 type RarityFilter = (typeof RARITY_OPTIONS)[number]
 
-const GENERATION_OPTIONS = ['전체', 'S1'] as const
-type GenerationFilter = (typeof GENERATION_OPTIONS)[number]
-
 export default function HeroList({ heroes }: HeroListProps) {
+  // 영웅 데이터에서 존재하는 세대를 숫자 오름차순으로 동적 추출 (예: ['전체', 'S1', 'S2'])
+  const generationOptions = useMemo(() => {
+    const gens = Array.from(
+      new Set(
+        heroes
+          .map((h) => h.generation)
+          .filter((g): g is number => typeof g === 'number' && g > 0),
+      ),
+    ).sort((a, b) => a - b)
+    return ['전체', ...gens.map((g) => `S${g}`)]
+  }, [heroes])
+
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedTroop, setSelectedTroop] = useState<TroopFilter>('전체')
   const [selectedRarity, setSelectedRarity] = useState<RarityFilter>('전체')
-  const [selectedGeneration, setSelectedGeneration] = useState<GenerationFilter>('전체')
+  const [selectedGeneration, setSelectedGeneration] = useState<string>('전체')
   const [selectedHero, setSelectedHero] = useState<Hero | null>(null)
   const triggerElementRef = useRef<HTMLElement | null>(null)
 
@@ -69,7 +78,8 @@ export default function HeroList({ heroes }: HeroListProps) {
 
     const matchGeneration =
       selectedGeneration === '전체' ||
-      (selectedGeneration === 'S1' && hero.generation === 1)
+      (selectedGeneration.startsWith('S') &&
+        hero.generation === parseInt(selectedGeneration.slice(1), 10))
 
     return matchSearch && matchTroop && matchRarity && matchGeneration
   })
@@ -189,13 +199,13 @@ export default function HeroList({ heroes }: HeroListProps) {
               })}
             </div>
 
-            {/* 세대 선택 버튼 그룹 */}
+            {/* 세대 선택 버튼 그룹 (데이터 기반 동적 생성) */}
             <div
               role="group"
               aria-label="세대 필터"
               className="flex items-center gap-1.5 flex-1 sm:flex-none"
             >
-              {GENERATION_OPTIONS.map((gen) => {
+              {generationOptions.map((gen) => {
                 const isSelected = selectedGeneration === gen
                 return (
                   <button

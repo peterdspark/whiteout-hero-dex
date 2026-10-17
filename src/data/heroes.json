@@ -165,5 +165,35 @@
     "subtype": "성장형",
     "generation": 1,
     "imageUrl": "/assets/heroes/hero_zinman.png"
+  },
+  {
+    "id": "flint",
+    "nameKo": "플린트",
+    "nameEn": "Flint",
+    "rarity": "레전드",
+    "troopType": "보병",
+    "subtype": "전투형",
+    "generation": 2,
+    "imageUrl": "/assets/heroes/hero_flint.png"
+  },
+  {
+    "id": "philly",
+    "nameKo": "필리",
+    "nameEn": "Philly",
+    "rarity": "레전드",
+    "troopType": "창병",
+    "subtype": "전투형",
+    "generation": 2,
+    "imageUrl": "/assets/heroes/hero_philly.png"
+  },
+  {
+    "id": "alonso",
+    "nameKo": "알론소",
+    "nameEn": "Alonso",
+    "rarity": "레전드",
+    "troopType": "궁병",
+    "subtype": "전투형",
+    "generation": 2,
+    "imageUrl": "/assets/heroes/hero_alonso.png"
   }
 ]
