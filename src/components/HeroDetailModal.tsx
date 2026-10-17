@@ -14,25 +14,31 @@ export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps)
   const dialogRef = useRef<HTMLDialogElement>(null)
   const [imageError, setImageError] = useState(false)
 
-  // dialog showModal / close 제어 및 배경 스크롤 차단
+  // dialog showModal / close 제어 및 배경 스크롤 차단 (레이아웃 시프트 방지)
   useEffect(() => {
     const dialog = dialogRef.current
-    if (!dialog) return
+    if (!dialog || !hero) return
 
-    if (hero) {
-      if (!dialog.open) {
-        dialog.showModal()
-      }
-      const originalOverflow = document.body.style.overflow
-      document.body.style.overflow = 'hidden'
+    if (!dialog.open) {
+      dialog.showModal()
+    }
 
-      return () => {
-        document.body.style.overflow = originalOverflow
-        if (dialog.open) {
-          dialog.close()
-        }
-      }
-    } else {
+    // 스크롤바 너비 계산 (스크롤바 제거로 인한 화면 좌우 흔들림 방지)
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth
+    const originalHtmlOverflow = document.documentElement.style.overflow
+    const originalBodyOverflow = document.body.style.overflow
+    const originalBodyPaddingRight = document.body.style.paddingRight
+
+    if (scrollbarWidth > 0) {
+      document.body.style.paddingRight = `${scrollbarWidth}px`
+    }
+    document.documentElement.style.overflow = 'hidden'
+    document.body.style.overflow = 'hidden'
+
+    return () => {
+      document.documentElement.style.overflow = originalHtmlOverflow
+      document.body.style.overflow = originalBodyOverflow
+      document.body.style.paddingRight = originalBodyPaddingRight
       if (dialog.open) {
         dialog.close()
       }
@@ -108,7 +114,7 @@ export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps)
       onCancel={handleCancel}
       onClick={handleBackdropClick}
       aria-labelledby="hero-detail-modal-title"
-      className="backdrop:bg-slate-950/80 backdrop:backdrop-blur-sm bg-transparent p-0 m-auto max-w-lg w-[calc(100%-2rem)] max-h-[90vh] rounded-2xl border border-slate-800 text-slate-100 shadow-2xl focus:outline-none"
+      className="backdrop:bg-slate-950/80 backdrop:backdrop-blur-sm bg-transparent p-0 m-auto max-w-lg w-[calc(100%-2rem)] max-h-[90vh] rounded-2xl border border-slate-800 text-slate-100 shadow-2xl focus:outline-none overflow-hidden"
     >
       <div
         className="flex flex-col max-h-[90vh] bg-slate-900/95 backdrop-blur-md rounded-2xl overflow-hidden"
