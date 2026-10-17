@@ -35,5 +35,15 @@
     "subtype": "성장형",
     "generation": null,
     "imageUrl": "/assets/heroes/hero_smith.png"
+  },
+  {
+    "id": "eugene",
+    "nameKo": "유진",
+    "nameEn": "Eugene",
+    "rarity": "레어",
+    "troopType": "보병",
+    "subtype": "성장형",
+    "generation": null,
+    "imageUrl": "/assets/heroes/hero_eugene.png"
   }
 ]
