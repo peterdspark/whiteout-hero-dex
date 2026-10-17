@@ -7,7 +7,7 @@
     "description": "부채꼴 범위의 적에게 0.5초마다 공격력에 비례한 피해를 입힘. 지속시간 2초.",
     "effects": [
       {
-        "statName": "공격력 대비 피해 비율",
+        "statName": "주는 범위 피해 증가",
         "unit": "%",
         "levels": [
           55,
@@ -21,7 +21,8 @@
     "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%A0%9C%EC%8B%9C/",
     "verificationStatus": "게임 화면·위키 대조 완료",
     "verificationBadgeText": "게임 화면·위키 확인",
-    "evidence": "사용자가 제공한 게임 화면과 위키의 수치가 일치함."
+    "evidence": "사용자가 제공한 게임 화면과 위키의 수치가 일치함.",
+    "notes": "2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
   },
   {
     "id": "jessie-defense-modification",
@@ -31,7 +32,7 @@
     "description": "자신의 방어력 증가.",
     "effects": [
       {
-        "statName": "방어력 증가율",
+        "statName": "방어력 증가",
         "unit": "%",
         "levels": [
           25,
@@ -45,7 +46,8 @@
     "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%A0%9C%EC%8B%9C/",
     "verificationStatus": "게임 화면·위키 대조 완료",
     "verificationBadgeText": "게임 화면·위키 확인",
-    "evidence": "위키의 레벨별 수치와 사용자의 게임 화면 확인을 기준으로 함. 특히 Lv.5는 사용자가 70%임을 확인함."
+    "evidence": "위키의 레벨별 수치와 사용자의 게임 화면 확인을 기준으로 함. 특히 Lv.5는 사용자가 70%임을 확인함.",
+    "notes": "2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
   },
   {
     "id": "jessie-weapon-modification",
@@ -55,7 +57,7 @@
     "description": "자신의 공격력 증가.",
     "effects": [
       {
-        "statName": "공격력 증가율",
+        "statName": "공격력 증가",
         "unit": "%",
         "levels": [
           8,
@@ -69,7 +71,8 @@
     "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%A0%9C%EC%8B%9C/",
     "verificationStatus": "위키 기준",
     "verificationBadgeText": "위키 기준",
-    "evidence": "위키의 레벨별 수치를 기준으로 함. 게임 화면 대조는 미완료 상태임."
+    "evidence": "위키의 레벨별 수치를 기준으로 함. 게임 화면 대조는 미완료 상태임.",
+    "notes": "2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
   },
   {
     "id": "jessie-fully-armed",
@@ -79,7 +82,7 @@
     "description": "전체 아군 부대의 주는 피해 증가.",
     "effects": [
       {
-        "statName": "피해 증가율",
+        "statName": "가하는 피해 증가",
         "unit": "%",
         "levels": [
           5,
@@ -93,7 +96,8 @@
     "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%A0%9C%EC%8B%9C/",
     "verificationStatus": "위키 기준",
     "verificationBadgeText": "위키 기준",
-    "evidence": "위키의 레벨별 수치를 기준으로 함. 게임 화면 대조는 미완료 상태임."
+    "evidence": "위키의 레벨별 수치를 기준으로 함. 게임 화면 대조는 미완료 상태임.",
+    "notes": "2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
   },
   {
     "id": "jessie-mechanical-barrier",
@@ -103,7 +107,7 @@
     "description": "전체 아군 부대의 받는 피해 감소.",
     "effects": [
       {
-        "statName": "피해 감소율",
+        "statName": "받는 피해 감소",
         "unit": "%",
         "levels": [
           4,
@@ -117,7 +121,8 @@
     "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%A0%9C%EC%8B%9C/",
     "verificationStatus": "위키 기준",
     "verificationBadgeText": "위키 기준",
-    "evidence": "위키의 레벨별 수치를 기준으로 함. 게임 화면 대조는 미완료 상태임."
+    "evidence": "위키의 레벨별 수치를 기준으로 함. 게임 화면 대조는 미완료 상태임.",
+    "notes": "2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
   },
   {
     "id": "sergey-shield-assault",
@@ -127,7 +132,7 @@
     "description": "무거운 방패로 적에게 부딪혀 공격력에 비례한 범위 피해를 입히며 상대를 넉백시킨다.",
     "effects": [
       {
-        "statName": "공격력 대비 범위 피해 비율",
+        "statName": "주는 범위 피해 증가",
         "unit": "%",
         "levels": [
           200,
@@ -141,7 +146,8 @@
     "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%84%B8%EB%A5%B4%EA%B2%8C%EC%9D%B4/",
     "verificationStatus": "위키 기준",
     "verificationBadgeText": "위키 기준",
-    "evidence": "Whiteout Survival 공식 한국어 위키 세르게이 페이지 기준."
+    "evidence": "Whiteout Survival 공식 한국어 위키 세르게이 페이지 기준.",
+    "notes": "2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
   },
   {
     "id": "sergey-united-defense",
@@ -151,7 +157,7 @@
     "description": "세르게이가 사람들을 인솔하여 방어선을 구축하고 모든 아군 영웅의 방어력을 향상시킨다.",
     "effects": [
       {
-        "statName": "모든 아군 영웅 방어력 증가율",
+        "statName": "방어력 증가",
         "unit": "%",
         "levels": [
           5,
@@ -165,7 +171,8 @@
     "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%84%B8%EB%A5%B4%EA%B2%8C%EC%9D%B4/",
     "verificationStatus": "위키 기준",
     "verificationBadgeText": "위키 기준",
-    "evidence": "Whiteout Survival 공식 한국어 위키 세르게이 페이지 기준."
+    "evidence": "Whiteout Survival 공식 한국어 위키 세르게이 페이지 기준.",
+    "notes": "2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
   },
   {
     "id": "sergey-shield-resistance",
@@ -175,7 +182,7 @@
     "description": "방패를 강화해서 자신이 받는 피해가 하락한다.",
     "effects": [
       {
-        "statName": "자신이 받는 피해 감소율",
+        "statName": "받는 피해 감소",
         "unit": "%",
         "levels": [
           10,
@@ -189,7 +196,8 @@
     "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%84%B8%EB%A5%B4%EA%B2%8C%EC%9D%B4/",
     "verificationStatus": "위키 기준",
     "verificationBadgeText": "위키 기준",
-    "evidence": "Whiteout Survival 공식 한국어 위키 세르게이 페이지 기준."
+    "evidence": "Whiteout Survival 공식 한국어 위키 세르게이 페이지 기준.",
+    "notes": "2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
   },
   {
     "id": "sergey-power-of-protection",
@@ -199,7 +207,7 @@
     "description": "세르게이가 방패로 아군을 보호해서 전체 아군 부대가 받는 피해가 감소한다.",
     "effects": [
       {
-        "statName": "전체 아군 부대 받는 피해 감소율",
+        "statName": "받는 피해 감소",
         "unit": "%",
         "levels": [
           4,
@@ -213,7 +221,8 @@
     "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%84%B8%EB%A5%B4%EA%B2%8C%EC%9D%B4/",
     "verificationStatus": "위키 기준",
     "verificationBadgeText": "위키 기준",
-    "evidence": "Whiteout Survival 공식 한국어 위키 세르게이 페이지 기준."
+    "evidence": "Whiteout Survival 공식 한국어 위키 세르게이 페이지 기준.",
+    "notes": "2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
   },
   {
     "id": "sergey-weakness-strike",
@@ -223,7 +232,7 @@
     "description": "세르게이가 전체 적군 부대의 공격력을 하락시킨다.",
     "effects": [
       {
-        "statName": "전체 적군 부대 공격력 감소율",
+        "statName": "적군 부대 공격력 감소",
         "unit": "%",
         "levels": [
           4,
@@ -237,7 +246,8 @@
     "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%84%B8%EB%A5%B4%EA%B2%8C%EC%9D%B4/",
     "verificationStatus": "위키 기준",
     "verificationBadgeText": "위키 기준",
-    "evidence": "Whiteout Survival 공식 한국어 위키 세르게이 페이지 기준."
+    "evidence": "Whiteout Survival 공식 한국어 위키 세르게이 페이지 기준.",
+    "notes": "2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
   },
   {
     "id": "seo-yoon-dawn-drumbeat",
@@ -247,7 +257,7 @@
     "description": "힘을 북돋워 주는 북소리로 전의를 불러일으켜 모든 아군 영웅과 호위병의 공격력과 공격 속도를 향상시킨다. 지속시간 4초.",
     "effects": [
       {
-        "statName": "모든 아군 영웅 및 호위병 공격력 증가율",
+        "statName": "공격력 증가",
         "unit": "%",
         "levels": [
           1.5,
@@ -258,7 +268,7 @@
         ]
       },
       {
-        "statName": "모든 아군 영웅 및 호위병 공격 속도 증가율",
+        "statName": "공격 속도 증가",
         "unit": "%",
         "levels": [
           2.5,
@@ -274,7 +284,7 @@
     "verificationBadgeText": "게임 화면 확인",
     "evidence": "사용자가 제공한 게임 화면(서윤의스킬.jpg) 기준 대조 완료.",
     "verificationDate": "2026-10-17",
-    "notes": "위키의 기재 수치(공격력 2.5%~4.5%, 공속 4% 고정)가 실제 게임 화면과 상이하여, 사용자 제공 게임 화면(서윤의스킬.jpg)의 수치를 우선 적용함."
+    "notes": "위키의 기재 수치(공격력 2.5%~4.5%, 공속 4% 고정)가 실제 게임 화면과 상이하여, 사용자 제공 게임 화면(서윤의스킬.jpg)의 수치를 우선 적용함. 2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
   },
   {
     "id": "seo-yoon-frontal-attack",
@@ -284,7 +294,7 @@
     "description": "타깃의 급소를 겨냥해 있는 힘껏 북채를 던져 타깃에 공격력에 비례한 피해를 준다.",
     "effects": [
       {
-        "statName": "공격력 대비 피해 비율",
+        "statName": "가하는 피해 증가",
         "unit": "%",
         "levels": [
           150,
@@ -298,7 +308,8 @@
     "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%84%9C%EC%9C%A4/",
     "verificationStatus": "위키 기준",
     "verificationBadgeText": "위키 기준",
-    "evidence": "Whiteout Survival 공식 한국어 위키 서윤 페이지 기준."
+    "evidence": "Whiteout Survival 공식 한국어 위키 서윤 페이지 기준.",
+    "notes": "2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
   },
   {
     "id": "seo-yoon-fierce-wind",
@@ -308,7 +319,7 @@
     "description": "바람처럼 거센 공세로 일반 공격을 3번 가할 때마다 자신의 공격 속도를 상승시키며, 전투가 끝날 때까지 지속된다.",
     "effects": [
       {
-        "statName": "자신의 공격 속도 증가율",
+        "statName": "공격 속도 증가",
         "unit": "%",
         "levels": [
           1,
@@ -322,7 +333,8 @@
     "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%84%9C%EC%9C%A4/",
     "verificationStatus": "위키 기준",
     "verificationBadgeText": "위키 기준",
-    "evidence": "Whiteout Survival 공식 한국어 위키 서윤 페이지 기준."
+    "evidence": "Whiteout Survival 공식 한국어 위키 서윤 페이지 기준.",
+    "notes": "2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
   },
   {
     "id": "seo-yoon-expedition-drumbeat",
@@ -332,7 +344,7 @@
     "description": "출정 시 서윤은 북을 치며 부대원의 사기를 높이며, 전체 아군 부대의 공격력을 상승시킨다.",
     "effects": [
       {
-        "statName": "전체 아군 부대 공격력 증가율",
+        "statName": "공격력 증가",
         "unit": "%",
         "levels": [
           5,
@@ -346,7 +358,8 @@
     "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%84%9C%EC%9C%A4/",
     "verificationStatus": "위키 기준",
     "verificationBadgeText": "위키 기준",
-    "evidence": "Whiteout Survival 공식 한국어 위키 서윤 페이지 기준."
+    "evidence": "Whiteout Survival 공식 한국어 위키 서윤 페이지 기준.",
+    "notes": "2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
   },
   {
     "id": "seo-yoon-dance-of-healing",
@@ -356,7 +369,7 @@
     "description": "고대의 전통 의술로 부상병을 보살펴 의무실의 치료 속도를 상승시킨다.",
     "effects": [
       {
-        "statName": "의무실 치료 속도 증가율",
+        "statName": "치료 속도 증가",
         "unit": "%",
         "levels": [
           10,
@@ -370,7 +383,8 @@
     "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%84%9C%EC%9C%A4/",
     "verificationStatus": "위키 기준",
     "verificationBadgeText": "위키 기준",
-    "evidence": "Whiteout Survival 공식 한국어 위키 서윤 페이지 기준."
+    "evidence": "Whiteout Survival 공식 한국어 위키 서윤 페이지 기준.",
+    "notes": "2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
   },
   {
     "id": "smith-hammer-burn",
@@ -380,7 +394,7 @@
     "description": "무거운 도끼를 휘둘러 전방 부채꼴 범위의 적에게 공격력에 비례한 피해를 입힌다.",
     "effects": [
       {
-        "statName": "피해 계수",
+        "statName": "주는 범위 피해 증가",
         "unit": "%",
         "levels": [
           200,
@@ -395,7 +409,8 @@
     "verificationStatus": "위키 기준",
     "verificationBadgeText": "위키 기준",
     "evidence": "Whiteout Survival 공식 한국어 위키 스미스(Smith) 페이지 기준 (영문 위키 Hammer Burn 대조 완료).",
-    "verificationDate": "2026-10-17"
+    "verificationDate": "2026-10-17",
+    "notes": "2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
   },
   {
     "id": "smith-armor-enhancement",
@@ -430,7 +445,7 @@
     "description": "스미스가 제조 기술을 전수하여 도시 안 철광 공장의 생산량을 향상시킨다.",
     "effects": [
       {
-        "statName": "도시 철광 생산량 증가",
+        "statName": "제철 공장 수익",
         "unit": "%",
         "levels": [
           5,
@@ -445,7 +460,8 @@
     "verificationStatus": "위키 기준",
     "verificationBadgeText": "위키 기준",
     "evidence": "Whiteout Survival 공식 한국어 위키 스미스(Smith) 페이지 기준 (영문 위키 Burnished Iron 대조 완료).",
-    "verificationDate": "2026-10-17"
+    "verificationDate": "2026-10-17",
+    "notes": "2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
   },
   {
     "id": "smith-craftsmanship",
@@ -455,7 +471,7 @@
     "description": "스미스와 철광석 사이의 특별한 감각으로 지도에서 철광 채집 속도가 증가한다.",
     "effects": [
       {
-        "statName": "지도에서 철광 채집 속도 증가",
+        "statName": "철광 채집 속도",
         "unit": "%",
         "levels": [
           5,
@@ -470,7 +486,8 @@
     "verificationStatus": "위키 기준",
     "verificationBadgeText": "위키 기준",
     "evidence": "Whiteout Survival 공식 한국어 위키 스미스(Smith) 페이지 기준 (영문 위키 Craftsmanship 대조 완료).",
-    "verificationDate": "2026-10-17"
+    "verificationDate": "2026-10-17",
+    "notes": "2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
   },
   {
     "id": "eugene-axe-whirl",
@@ -480,7 +497,7 @@
     "description": "빠르게 회전해서 0.5초마다 주변 적에게 공격력에 비례한 피해를 입힌다. 지속시간 3초.",
     "effects": [
       {
-        "statName": "피해 계수",
+        "statName": "주는 범위 피해 증가",
         "unit": "%",
         "levels": [
           80,
@@ -495,7 +512,8 @@
     "verificationStatus": "위키 기준",
     "verificationBadgeText": "위키 기준",
     "evidence": "Whiteout Survival 공식 한국어 및 영어 위키 유진(Eugene) 페이지 기준 (확인일: 2026-10-17)",
-    "verificationDate": "2026-10-17"
+    "verificationDate": "2026-10-17",
+    "notes": "2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
   },
   {
     "id": "eugene-razor-sharp",
@@ -505,7 +523,7 @@
     "description": "도끼를 강화해서 입히는 피해를 증가시킨다.",
     "effects": [
       {
-        "statName": "입히는 피해 증가",
+        "statName": "가하는 피해 증가",
         "unit": "%",
         "levels": [
           10,
@@ -520,7 +538,8 @@
     "verificationStatus": "위키 기준",
     "verificationBadgeText": "위키 기준",
     "evidence": "Whiteout Survival 공식 한국어 및 영어 위키 유진(Eugene) 페이지 기준 (확인일: 2026-10-17)",
-    "verificationDate": "2026-10-17"
+    "verificationDate": "2026-10-17",
+    "notes": "2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
   },
   {
     "id": "eugene-woodland-inheritor",
@@ -530,7 +549,7 @@
     "description": "유진의 훌륭한 벌목 기술로 도시 안 벌목장의 생산량이 향상된다.",
     "effects": [
       {
-        "statName": "도시 벌목장 생산량 증가",
+        "statName": "벌목 수익",
         "unit": "%",
         "levels": [
           5,
@@ -545,7 +564,8 @@
     "verificationStatus": "위키 기준",
     "verificationBadgeText": "위키 기준",
     "evidence": "Whiteout Survival 공식 한국어 및 영어 위키 유진(Eugene) 페이지 기준 (확인일: 2026-10-17)",
-    "verificationDate": "2026-10-17"
+    "verificationDate": "2026-10-17",
+    "notes": "2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
   },
   {
     "id": "eugene-master-woodcutter",
@@ -555,7 +575,7 @@
     "description": "목재 채집 작업에 열심인 유진이 출정 시 지도에서 목재 채집 속도가 증가한다.",
     "effects": [
       {
-        "statName": "지도에서 목재 채집 속도 증가",
+        "statName": "목재 채집 속도",
         "unit": "%",
         "levels": [
           5,
@@ -570,7 +590,8 @@
     "verificationStatus": "위키 기준",
     "verificationBadgeText": "위키 기준",
     "evidence": "Whiteout Survival 공식 한국어 및 영어 위키 유진(Eugene) 페이지 기준 (확인일: 2026-10-17)",
-    "verificationDate": "2026-10-17"
+    "verificationDate": "2026-10-17",
+    "notes": "2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
   },
   {
     "id": "charlie-shrapnel-load",
