@@ -45,5 +45,15 @@
     "subtype": "성장형",
     "generation": null,
     "imageUrl": "/assets/heroes/hero_eugene.png"
+  },
+  {
+    "id": "charlie",
+    "nameKo": "찰리",
+    "nameEn": "Charlie",
+    "rarity": "레어",
+    "troopType": "창병",
+    "subtype": "성장형",
+    "generation": null,
+    "imageUrl": "/assets/heroes/hero_charlie.png"
   }
 ]

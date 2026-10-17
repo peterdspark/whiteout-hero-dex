@@ -88,6 +88,9 @@ export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps)
     if (badgeText === '게임 화면·위키 확인' || badgeText === '게임 화면 확인') {
       return 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30'
     }
+    if (badgeText === '위키 기준·일부 게임 확인') {
+      return 'bg-teal-500/15 text-teal-300 border-teal-500/30'
+    }
     return 'bg-slate-800/90 text-slate-300 border-slate-700'
   }
 
@@ -311,7 +314,7 @@ export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps)
                                       Lv.{lIdx + 1}
                                     </span>
                                     <span className="text-xs font-bold text-cyan-300 truncate w-full mt-0.5">
-                                      {value}%
+                                      {value}{effect.unit}
                                     </span>
                                   </div>
                                 ))}
@@ -396,7 +399,7 @@ export default function HeroDetailModal({ hero, onClose }: HeroDetailModalProps)
                                       Lv.{lIdx + 1}
                                     </span>
                                     <span className="text-xs font-bold text-amber-300 truncate w-full mt-0.5">
-                                      {value}%
+                                      {value}{effect.unit}
                                     </span>
                                   </div>
                                 ))}
