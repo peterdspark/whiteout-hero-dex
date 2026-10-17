@@ -65,5 +65,65 @@
     "subtype": "성장형",
     "generation": null,
     "imageUrl": "/assets/heroes/hero_cloris.png"
+  },
+  {
+    "id": "patrick",
+    "nameKo": "패트릭",
+    "nameEn": "Patrick",
+    "rarity": "에픽",
+    "troopType": "창병",
+    "subtype": "전투형",
+    "generation": null,
+    "imageUrl": "/assets/heroes/hero_patrick.png"
+  },
+  {
+    "id": "lumak-bokan",
+    "nameKo": "룸 보겐",
+    "nameEn": "Lumak Bokan",
+    "rarity": "에픽",
+    "troopType": "창병",
+    "subtype": "전투형",
+    "generation": null,
+    "imageUrl": "/assets/heroes/hero_lumak_bokan.png"
+  },
+  {
+    "id": "ling-xue",
+    "nameKo": "료유키",
+    "nameEn": "Ling Xue",
+    "rarity": "에픽",
+    "troopType": "창병",
+    "subtype": "성장형",
+    "generation": null,
+    "imageUrl": "/assets/heroes/hero_ling_xue.jpg"
+  },
+  {
+    "id": "gina",
+    "nameKo": "지나",
+    "nameEn": "Gina",
+    "rarity": "에픽",
+    "troopType": "궁병",
+    "subtype": "전투형",
+    "generation": null,
+    "imageUrl": "/assets/heroes/hero_gina.png"
+  },
+  {
+    "id": "bahiti",
+    "nameKo": "바히티",
+    "nameEn": "Bahiti",
+    "rarity": "에픽",
+    "troopType": "궁병",
+    "subtype": "전투형",
+    "generation": null,
+    "imageUrl": "/assets/heroes/hero_bahiti.png"
+  },
+  {
+    "id": "jasser",
+    "nameKo": "제셀",
+    "nameEn": "Jasser",
+    "rarity": "에픽",
+    "troopType": "궁병",
+    "subtype": "성장형",
+    "generation": null,
+    "imageUrl": "/assets/heroes/hero_jasser.jpg"
   }
 ]

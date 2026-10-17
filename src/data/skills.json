@@ -811,5 +811,840 @@
     "evidence": "사용자 게임 화면 확인 보고 (효과 명칭) 및 Whiteout Survival 위키 기준.",
     "verificationDate": "2026-10-17",
     "notes": "2026-10-17 사용자 게임 화면 확인 보고에 따라 효과 표시 명칭을 적용함. 이번 확인 범위는 명칭이며 수치의 추가 검증을 의미하지 않음."
+  },
+  {
+    "id": "patrick-bbq-feast",
+    "heroId": "patrick",
+    "name": "BBQ 파티",
+    "category": "탐험",
+    "description": "풍성한 만찬으로 전체 아군에게 패트릭의 공격력 200%/220%/240%/260%/280%의 HP를 회복시키고, 전체 아군의 공격력을 5%/5.5%/6%/6.5%/7% 향상시킨다. 지속시간 4초.",
+    "effects": [
+      {
+        "statName": "HP 회복",
+        "unit": "%",
+        "levels": [
+          200,
+          220,
+          240,
+          260,
+          280
+        ]
+      },
+      {
+        "statName": "공격력 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          5.5,
+          6,
+          6.5,
+          7
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ED%8C%A8%ED%8A%B8%EB%A6%AD/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 공격력 비례 HP 회복 및 전체 아군 공격력 증가(지속시간 4초) 복합 효과."
+  },
+  {
+    "id": "patrick-thick-belly",
+    "heroId": "patrick",
+    "name": "두꺼운 지방",
+    "category": "탐험",
+    "description": "요리사의 두터운 지방 덕분에 자신이 받는 피해가 10%/15%/20%/25%/30% 하락한다.",
+    "effects": [
+      {
+        "statName": "받는 피해 감소",
+        "unit": "%",
+        "levels": [
+          10,
+          15,
+          20,
+          25,
+          30
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ED%8C%A8%ED%8A%B8%EB%A6%AD/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준."
+  },
+  {
+    "id": "patrick-emergency-snack",
+    "heroId": "patrick",
+    "name": "비상식량",
+    "category": "탐험",
+    "description": "음식을 가지고 다니며 5초 간격으로 공격력 50%/55%/60%/65%/70%의 HP를 회복한다.",
+    "effects": [
+      {
+        "statName": "HP 회복",
+        "unit": "%",
+        "levels": [
+          50,
+          55,
+          60,
+          65,
+          70
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ED%8C%A8%ED%8A%B8%EB%A6%AD/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 5초 간격으로 공격력에 비례한 HP 회복."
+  },
+  {
+    "id": "patrick-super-nutrients",
+    "heroId": "patrick",
+    "name": "미식 효과",
+    "category": "원정",
+    "description": "패트릭이 요리한 맛있는 음식이 사람들을 기쁘게 만들어 전체 아군 부대의 HP가 5%/10%/15%/20%/25% 상승한다.",
+    "effects": [
+      {
+        "statName": "부대 HP 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ED%8C%A8%ED%8A%B8%EB%A6%AD/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준."
+  },
+  {
+    "id": "patrick-caloric-booster",
+    "heroId": "patrick",
+    "name": "에너지 섭취",
+    "category": "원정",
+    "description": "미식이 투지와 잠재력을 불러일으켜 전체 아군 부대 공격력이 5%/10%/15%/20%/25% 상승한다.",
+    "effects": [
+      {
+        "statName": "공격력 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ED%8C%A8%ED%8A%B8%EB%A6%AD/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준."
+  },
+  {
+    "id": "lumak-bokan-earthshake",
+    "heroId": "lumak-bokan",
+    "name": "산의 포효",
+    "category": "탐험",
+    "description": "산을 울리는 듯한 전투 함성으로 적을 위협하고 전체 적군의 공격력을 1%/2%/3%/4%/5% 저하시킨다. 2초간 지속.",
+    "effects": [
+      {
+        "statName": "적군 공격력 감소",
+        "unit": "%",
+        "levels": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EB%A3%B8-%EB%B3%B4%EA%B2%90/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 적군 대상, 지속시간 2초."
+  },
+  {
+    "id": "lumak-bokan-echoing-boost",
+    "heroId": "lumak-bokan",
+    "name": "전투 함성의 힘",
+    "category": "탐험",
+    "description": "전투 함성은 적을 위협할 수 있을 뿐만 아니라 전우에게 힘을 줄 수도 있다. \"산의 포효\"를 시전하면 자신과 주변 아군 부대원의 공격력이 15%/20%/25%/30%/35% 상승한다. 2초간 지속.",
+    "effects": [
+      {
+        "statName": "공격력 증가",
+        "unit": "%",
+        "levels": [
+          15,
+          20,
+          25,
+          30,
+          35
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EB%A3%B8-%EB%B3%B4%EA%B2%90/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 산의 포효 시전 시 자신 및 주변 아군 적용 (지속시간 2초)."
+  },
+  {
+    "id": "lumak-bokan-jungle-born-agility",
+    "heroId": "lumak-bokan",
+    "name": "숲속의 전투춤",
+    "category": "탐험",
+    "description": "일 년 내내 정글과 산지에서 겪은 싸움은 룸 보겐을 더 민첩하게 만들었다. 공격 속도가 10%/15%/20%/25%/30% 증가한다.",
+    "effects": [
+      {
+        "statName": "공격 속도 증가",
+        "unit": "%",
+        "levels": [
+          10,
+          15,
+          20,
+          25,
+          30
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EB%A3%B8-%EB%B3%B4%EA%B2%90/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준."
+  },
+  {
+    "id": "lumak-bokan-tactical-deception",
+    "heroId": "lumak-bokan",
+    "name": "적을 현혹하는 전술",
+    "category": "원정",
+    "description": "룸 보겐은 정교한 게릴라 전략으로 적을 현혹하여 전체 적군 부대의 피해를 4%/8%/12%/16%/20% 감소시킨다.",
+    "effects": [
+      {
+        "statName": "적군 가하는 피해 감소",
+        "unit": "%",
+        "levels": [
+          4,
+          8,
+          12,
+          16,
+          20
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EB%A3%B8-%EB%B3%B4%EA%B2%90/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 적군 부대의 주는 피해(가하는 피해) 감소."
+  },
+  {
+    "id": "lumak-bokan-emerald-warrior",
+    "heroId": "lumak-bokan",
+    "name": "비취 용사",
+    "category": "원정",
+    "description": "룸 보겐은 원주민의 사냥 기술을 병사들에게 전수해 몬스터 사냥 행군 속도를 20%/40%/60%/80%/100% 증가시킨다.",
+    "effects": [
+      {
+        "statName": "사냥 행군 속도",
+        "unit": "%",
+        "levels": [
+          20,
+          40,
+          60,
+          80,
+          100
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EB%A3%B8-%EB%B3%B4%EA%B2%90/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준."
+  },
+  {
+    "id": "ling-xue-hurricane-whirl",
+    "heroId": "ling-xue",
+    "name": "광풍 군도",
+    "category": "탐험",
+    "description": "바람처럼 예리한 칼로 빠르게 찔러 전방의 직사각형 안에 있는 적에게 공격력 300%/330%/360%/390%/420%에 해당하는 피해를 입힌다.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          300,
+          330,
+          360,
+          390,
+          420
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EB%A3%8C%EC%9C%A0%ED%82%A4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전방 직사각형 범위 내 적 대상 공격력 비례 피해."
+  },
+  {
+    "id": "ling-xue-galeforce",
+    "heroId": "ling-xue",
+    "name": "하늘을 찌르는 기세",
+    "category": "탐험",
+    "description": "효예영의 병사들을 지휘해 용감하게 앞으로 돌진한다. HP가 50% 이상일 경우 공격력이 16%/24%/32%/40%/48% 상승한다.",
+    "effects": [
+      {
+        "statName": "공격력 증가",
+        "unit": "%",
+        "levels": [
+          16,
+          24,
+          32,
+          40,
+          48
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EB%A3%8C%EC%9C%A0%ED%82%A4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. HP 50% 이상 조건 발동."
+  },
+  {
+    "id": "ling-xue-desperate-measures",
+    "heroId": "ling-xue",
+    "name": "결사의 각오와 함께",
+    "category": "탐험",
+    "description": "역경 속에서 사기를 올려 잠재력을 이끌어낸다. HP가 50% 이하일 경우 방어력이 50%/75%/100%/125%/150% 상승한다.",
+    "effects": [
+      {
+        "statName": "방어력 증가",
+        "unit": "%",
+        "levels": [
+          50,
+          75,
+          100,
+          125,
+          150
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EB%A3%8C%EC%9C%A0%ED%82%A4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. HP 50% 이하 조건 발동."
+  },
+  {
+    "id": "ling-xue-fearsome-aura",
+    "heroId": "ling-xue",
+    "name": "위풍당당",
+    "category": "원정",
+    "description": "손쉽게 적진을 교란해 전체 적군 부대의 공격력이 4%/8%/12%/16%/20% 감소한다.",
+    "effects": [
+      {
+        "statName": "적군 부대 공격력 감소",
+        "unit": "%",
+        "levels": [
+          4,
+          8,
+          12,
+          16,
+          20
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EB%A3%8C%EC%9C%A0%ED%82%A4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준."
+  },
+  {
+    "id": "ling-xue-total-control",
+    "heroId": "ling-xue",
+    "name": "부대 정비와 강화",
+    "category": "원정",
+    "description": "병사들에게 뛰어난 무예를 직접 전수하여 훈련 속도가 4%/8%/12%/16%/20% 상승한다.",
+    "effects": [
+      {
+        "statName": "훈련 속도 증가",
+        "unit": "%",
+        "levels": [
+          4,
+          8,
+          12,
+          16,
+          20
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EB%A3%8C%EC%9C%A0%ED%82%A4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준."
+  },
+  {
+    "id": "gina-incendiary-arrow",
+    "heroId": "gina",
+    "name": "폭렬 화살",
+    "category": "탐험",
+    "description": "한 명의 적에게 폭탄 화살을 발사하여 공격력 210%/230%/250%/270%/290%의 피해를 입히고, 주변 소규모 범위의 적에게 공격력 70%/77%/84%/91%/98%의 피해를 입힌다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          210,
+          230,
+          250,
+          270,
+          290
+        ]
+      },
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          70,
+          77,
+          84,
+          91,
+          98
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%A7%80%EB%82%98/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 단일 목표 타깃 피해 및 주변 소규모 범위 복합 피해."
+  },
+  {
+    "id": "gina-windtalker",
+    "heroId": "gina",
+    "name": "바람의 인도",
+    "category": "탐험",
+    "description": "지나가 저격용 쇠뇌를 개조해서 공격 속도가 10%/15%/20%/25%/30% 상승한다.",
+    "effects": [
+      {
+        "statName": "공격 속도 증가",
+        "unit": "%",
+        "levels": [
+          10,
+          15,
+          20,
+          25,
+          30
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%A7%80%EB%82%98/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준."
+  },
+  {
+    "id": "gina-eagle-eyes",
+    "heroId": "gina",
+    "name": "호크 아이",
+    "category": "탐험",
+    "description": "적의 약점을 날카롭게 잡아내 치명타 확률이 7%/10%/13%/16%/20% 상승한다.",
+    "effects": [
+      {
+        "statName": "치명타 확률 증가",
+        "unit": "%",
+        "levels": [
+          7,
+          10,
+          13,
+          16,
+          20
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%A7%80%EB%82%98/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준."
+  },
+  {
+    "id": "gina-endurance-training",
+    "heroId": "gina",
+    "name": "강력한 육체",
+    "category": "원정",
+    "description": "지나가 영주에게 체력 훈련을 실시해 영주 스태미나 소모가 10%/12%/15%/18%/20% 감소한다.",
+    "effects": [
+      {
+        "statName": "스태미나 소모 감소",
+        "unit": "%",
+        "levels": [
+          10,
+          12,
+          15,
+          18,
+          20
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%A7%80%EB%82%98/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 영주 스태미나 소모 감소."
+  },
+  {
+    "id": "gina-quick-paced",
+    "heroId": "gina",
+    "name": "퀵 페이스트",
+    "category": "원정",
+    "description": "지나의 바람 같은 속도로 몹 처치 행군 속도가 20%/40%/60%/80%/100% 상승한다.",
+    "effects": [
+      {
+        "statName": "사냥 행군 속도",
+        "unit": "%",
+        "levels": [
+          20,
+          40,
+          60,
+          80,
+          100
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%A7%80%EB%82%98/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준."
+  },
+  {
+    "id": "bahiti-precise-shot",
+    "heroId": "bahiti",
+    "name": "약점 사격",
+    "category": "탐험",
+    "description": "탐험가의 날카로운 눈빛이 목표물의 약점을 찾아내 공격력 400%/440%/480%/520%/560%의 피해를 입힌다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          400,
+          440,
+          480,
+          520,
+          560
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EB%B0%94%ED%9E%88%ED%8B%B0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 단일 목표 타깃에 공격력 비례 피해."
+  },
+  {
+    "id": "bahiti-quick-shot",
+    "heroId": "bahiti",
+    "name": "퀵 샷",
+    "category": "탐험",
+    "description": "풍부한 야외 생존 경험으로 공격 속도가 10%/15%/20%/25%/30% 상승한다.",
+    "effects": [
+      {
+        "statName": "공격 속도 증가",
+        "unit": "%",
+        "levels": [
+          10,
+          15,
+          20,
+          25,
+          30
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EB%B0%94%ED%9E%88%ED%8B%B0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준."
+  },
+  {
+    "id": "bahiti-pathfinder-vision",
+    "heroId": "bahiti",
+    "name": "예리한 시야",
+    "category": "탐험",
+    "description": "바히티의 정밀한 사격으로 입히는 피해가 10%/15%/20%/25%/30% 증가한다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          10,
+          15,
+          20,
+          25,
+          30
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EB%B0%94%ED%9E%88%ED%8B%B0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준."
+  },
+  {
+    "id": "bahiti-sixth-sense",
+    "heroId": "bahiti",
+    "name": "위험 감지",
+    "category": "원정",
+    "description": "바히티가 전방의 위험을 감지하고 대응책을 찾아내 전체 아군 부대가 받는 피해가 4%/8%/12%/16%/20% 감소한다.",
+    "effects": [
+      {
+        "statName": "받는 피해 감소",
+        "unit": "%",
+        "levels": [
+          4,
+          8,
+          12,
+          16,
+          20
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EB%B0%94%ED%9E%88%ED%8B%B0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준."
+  },
+  {
+    "id": "bahiti-fluorescence",
+    "heroId": "bahiti",
+    "name": "불안정한 역장",
+    "category": "원정",
+    "description": "전투 타이밍을 찾아낼 줄 아는 바히티의 능력으로 전체 아군 부대가 공격할 때 50% 확률로 피해량이 10%/20%/30%/40%/50% 증가한다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EB%B0%94%ED%9E%88%ED%8B%B0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 아군 부대 공격 시 50% 확률로 발동."
+  },
+  {
+    "id": "jasser-triple-volley",
+    "heroId": "jasser",
+    "name": "다중 사격",
+    "category": "탐험",
+    "description": "정밀 조준 후 탄환을 세 발 연속 발사해 순서대로 공격력 100%, [125%/137.5%/150%/162.5%/175%], [150%/165%/180%/195%/210%]의 피해를 주며, 그중 세 번째 탄환으로 범위 피해를 가한다.",
+    "effects": [
+      {
+        "statName": "1탄 단일 피해",
+        "unit": "%",
+        "levels": [
+          100,
+          100,
+          100,
+          100,
+          100
+        ]
+      },
+      {
+        "statName": "2탄 단일 피해",
+        "unit": "%",
+        "levels": [
+          125,
+          137.5,
+          150,
+          162.5,
+          175
+        ]
+      },
+      {
+        "statName": "3탄 범위 피해",
+        "unit": "%",
+        "levels": [
+          150,
+          165,
+          180,
+          195,
+          210
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%A0%9C%EC%85%80/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 3연속 탄환 발사(1탄 100% 고정 단일, 2탄 단일, 3탄 범위 피해) 복합 효과."
+  },
+  {
+    "id": "jasser-suppressive-fire",
+    "heroId": "jasser",
+    "name": "화력 제압",
+    "category": "탐험",
+    "description": "정교한 사격술과 강력한 화력으로 적을 제압해 타깃에 공격력 100%/110%/120%/130%/140%의 피해를 주며, 타깃의 공격 속도를 30%/35%/40%/45%/50% 저하시킨다. 2초간 지속.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          100,
+          110,
+          120,
+          130,
+          140
+        ]
+      },
+      {
+        "statName": "타깃 공격 속도 감소",
+        "unit": "%",
+        "levels": [
+          30,
+          35,
+          40,
+          45,
+          50
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%A0%9C%EC%85%80/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 타깃 단일 공격력 비례 피해 및 타깃 공격 속도 감소(지속시간 2초) 복합 효과."
+  },
+  {
+    "id": "jasser-natural-precision",
+    "heroId": "jasser",
+    "name": "사격 본능",
+    "category": "탐험",
+    "description": "본능적으로 정교한 사격술을 타고난 제설의 공격력이 8%/12%/16%/20%/24% 상승한다.",
+    "effects": [
+      {
+        "statName": "공격력 증가",
+        "unit": "%",
+        "levels": [
+          8,
+          12,
+          16,
+          20,
+          24
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%A0%9C%EC%85%80/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준."
+  },
+  {
+    "id": "jasser-tactical-genius",
+    "heroId": "jasser",
+    "name": "전술적 추론",
+    "category": "원정",
+    "description": "담력과 지혜를 겸비한 제설의 전술적 소양과 지휘력은 아군 전체 부대의 피해를 5%/10%/15%/20%/25% 증가시킬 수 있다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%A0%9C%EC%85%80/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 아군 전체 부대 가하는 피해 증가."
+  },
+  {
+    "id": "jasser-enlightened-warfare",
+    "heroId": "jasser",
+    "name": "박학다식",
+    "category": "원정",
+    "description": "제셀의 해박한 학식은 도시에 도움을 주고 과학 기술 연구 속도를 3%/6%/9%/12%/15% 상승시킨다.",
+    "effects": [
+      {
+        "statName": "연구 속도 증가",
+        "unit": "%",
+        "levels": [
+          3,
+          6,
+          9,
+          12,
+          15
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%EC%A0%9C%EC%85%80/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 도시 과학 기술 연구 속도 상승."
   }
 ]
