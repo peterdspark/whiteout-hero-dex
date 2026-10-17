@@ -3470,5 +3470,2273 @@
     "evidence": "Whiteout Survival 위키 기준.",
     "verificationDate": "2026-10-17",
     "notes": "Whiteout Survival 위키 기준. 아군 전체 부대의 HP 향상."
+  },
+  {
+    "id": "ahmose-cthughas-protection",
+    "heroId": "ahmose",
+    "name": "크투게아의 가호",
+    "category": "탐험",
+    "description": "견고한 방패를 설치하여 적의 매서운 공격을 방어하고, 자신이 무적 상태에 돌입한다(해당 상태 동안 이동 및 스킬 시전 불가, 제어 면역). 2초간 주변 아군이 받는 피해를 30%/40%/50%/60%/70% 감소한다.",
+    "effects": [
+      {
+        "statName": "받는 피해 감소",
+        "unit": "%",
+        "levels": [
+          30,
+          40,
+          50,
+          60,
+          70
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%95%84%eb%aa%a8%ec%84%b8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 시전 시 자신 무적 상태(2초간 이동/스킬 시전 불가, 제어 면역) 및 주변 아군이 받는 피해 감소(2초 지속)."
+  },
+  {
+    "id": "ahmose-daybreak-knife",
+    "heroId": "ahmose",
+    "name": "새벽의 검",
+    "category": "탐험",
+    "description": "날카로운 창끝으로 전방의 적을 관통하여 공격력*70%/77%/84%/91%/98%의 피해를 입히고 방어선을 무너뜨려 이후 2초 동안 적이 받는 피해를 20% 증가시킨다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          70,
+          77,
+          84,
+          91,
+          98
+        ]
+      },
+      {
+        "statName": "목표 받는 피해 증가",
+        "unit": "%",
+        "levels": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%95%84%eb%aa%a8%ec%84%b8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전방 적 관통 피해 및 적이 받는 피해 20% 증가(2초 지속) 복합 효과."
+  },
+  {
+    "id": "ahmose-ancestral-blessing",
+    "heroId": "ahmose",
+    "name": "선대의 축복",
+    "category": "탐험",
+    "description": "불의 수정의 에너지는 선대의 축복처럼 아모세의 상처를 치유해준다. “크투게아의 가호”를 시전하면 5초간 초당 공격력*30%/33%/36%/39%/42%의 HP를 회복한다.",
+    "effects": [
+      {
+        "statName": "HP 회복",
+        "unit": "%",
+        "levels": [
+          30,
+          33,
+          36,
+          39,
+          42
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%95%84%eb%aa%a8%ec%84%b8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. '크투게아의 가호' 시전 후 5초간 초당 공격력 비례 HP 회복."
+  },
+  {
+    "id": "ahmose-viper-formation",
+    "heroId": "ahmose",
+    "name": "살모사 진형",
+    "category": "원정",
+    "description": "부대가 고대 수호자의 방어 진형을 펼치도록 하여 방패병이 4번 공격할 때마다 다음 공격을 포기하고 창병과 궁병이 받는 피해를 10%/15%/20%/25%/30% 감소시키며, 방패병이 받는 피해를 10%/25%/40%/55%/70% 감소시킨다. 2라운드 지속.",
+    "effects": [
+      {
+        "statName": "창병·궁병 받는 피해 감소",
+        "unit": "%",
+        "levels": [
+          10,
+          15,
+          20,
+          25,
+          30
+        ]
+      },
+      {
+        "statName": "보병 받는 피해 감소",
+        "unit": "%",
+        "levels": [
+          10,
+          25,
+          40,
+          55,
+          70
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%95%84%eb%aa%a8%ec%84%b8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 보병(방패병) 4회 공격마다 다음 공격을 포기하고 창병·궁병 및 보병 받는 피해 감소(2라운드 지속)."
+  },
+  {
+    "id": "ahmose-prayer-of-flame",
+    "heroId": "ahmose",
+    "name": "불의 축복",
+    "category": "원정",
+    "description": "불의 수정의 힘으로 아군 방패병의 투지를 불태워 이들이 입히는 피해를 20%/40%/60%/80%/100% 증가한다.",
+    "effects": [
+      {
+        "statName": "보병 가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          20,
+          40,
+          60,
+          80,
+          100
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%95%84%eb%aa%a8%ec%84%b8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 아군 보병(방패병)이 가하는 피해 증가."
+  },
+  {
+    "id": "ahmose-blade-of-light",
+    "heroId": "ahmose",
+    "name": "빛나는 칼날",
+    "category": "원정",
+    "description": "불의 수정의 정수를 방패병의 무기에 주입하여 공격 시마다 타깃에 12%/24%/36%/48%/60%의 추가 피해를 주도록 하며, 타깃이 받는 피해를 5%/10%/15%/20%/25%씩 증가시킨다. 1라운드 지속.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          12,
+          24,
+          36,
+          48,
+          60
+        ]
+      },
+      {
+        "statName": "목표 받는 피해 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%95%84%eb%aa%a8%ec%84%b8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 보병 공격 시 타깃에 추가 피해를 입히고 타깃이 받는 피해 증가(1라운드 지속)."
+  },
+  {
+    "id": "reina-phantom-assault",
+    "heroId": "reina",
+    "name": "그림자 기습",
+    "category": "탐험",
+    "description": "소환된 분신이 적 뒤로 순간이동하여 기습 공격하고 공격력*300%/330%/360%/390%/420%의 범위 피해를 입힌다.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          300,
+          330,
+          360,
+          390,
+          420
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a0%88%ec%9d%b4%eb%82%98/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 분신 소환 기습 범위 피해."
+  },
+  {
+    "id": "reina-vanishing-technique",
+    "heroId": "reina",
+    "name": "은둔의 비술",
+    "category": "탐험",
+    "description": "일반 공격을 받으면 5%/10%/15%/20%/25% 확률로 환술을 시전해서 상대를 속이고, 아무 피해도 받지 않는다.",
+    "effects": [
+      {
+        "statName": "발동 확률",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a0%88%ec%9d%b4%eb%82%98/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 일반 공격 피격 시 확률로 피해 회피(무효화)."
+  },
+  {
+    "id": "reina-poison-of-demon",
+    "heroId": "reina",
+    "name": "요괴의 독",
+    "category": "탐험",
+    "description": "적군 타깃(영웅 우선)에 마술을 시전하여 공격력*100%/110%/120%/130%/140%의 피해를 주고, 1.5초 동안 움직이지 못하게 한다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          100,
+          110,
+          120,
+          130,
+          140
+        ]
+      },
+      {
+        "statName": "행동 불가 시간",
+        "unit": "초",
+        "levels": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a0%88%ec%9d%b4%eb%82%98/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 적군 타깃(영웅 우선) 대상 공격력 비례 피해 및 1.5초간 행동 불가."
+  },
+  {
+    "id": "reina-assassins-instinct",
+    "heroId": "reina",
+    "name": "자객의 본능",
+    "category": "원정",
+    "description": "적의 약점을 가장 효과적으로 공격할 줄 아는 레이나가 아군 전체 부대의 일반 공격 피해를 10%/15%/20%/25%/30% 향상시킨다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          10,
+          15,
+          20,
+          25,
+          30
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a0%88%ec%9d%b4%eb%82%98/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 아군 부대의 일반 공격 피해 향상."
+  },
+  {
+    "id": "reina-swift-jive",
+    "heroId": "reina",
+    "name": "그림자 발걸음",
+    "category": "원정",
+    "description": "레이나는 영리한 지휘 기술을 발휘해서 전체 아군 부대가 일반 공격을 받으면 4%/8%/12%/16%/20%의 확률로 피해를 회피시킨다.",
+    "effects": [
+      {
+        "statName": "발동 확률",
+        "unit": "%",
+        "levels": [
+          4,
+          8,
+          12,
+          16,
+          20
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a0%88%ec%9d%b4%eb%82%98/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 아군 부대가 일반 공격을 받을 때 피해 회피 확률."
+  },
+  {
+    "id": "reina-shadow-blade",
+    "heroId": "reina",
+    "name": "그림자 칼날",
+    "category": "원정",
+    "description": "변화무쌍한 레이나의 전술로 창병이 25%의 확률로 한 번 더 공격하여 120%/140%/160%/180%/200%의 피해를 준다.",
+    "effects": [
+      {
+        "statName": "발동 확률",
+        "unit": "%",
+        "levels": [
+          25,
+          25,
+          25,
+          25,
+          25
+        ]
+      },
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          120,
+          140,
+          160,
+          180,
+          200
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a0%88%ec%9d%b4%eb%82%98/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 창병 25% 확률로 추가 공격 및 피해."
+  },
+  {
+    "id": "lynn-hymn-of-sidrak",
+    "heroId": "lynn",
+    "name": "시드락의 노래",
+    "category": "탐험",
+    "description": "투쟁의 선율로 사람의 마음을 고무시켜 아군 전체를 상태이상(빙결, 기절 등)에서 벗어나게 하고, 3/3.5/4/4.5/5초간 공격력을 3%/4%/5%/6%/7% 증가시킨다. 해당 상태 동안 어떠한 상태이상의 영향도 받지 않는다.",
+    "effects": [
+      {
+        "statName": "공격력 증가",
+        "unit": "%",
+        "levels": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "statName": "면역 시간",
+        "unit": "초",
+        "levels": [
+          3,
+          3.5,
+          4,
+          4.5,
+          5
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a6%b0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 아군 전체 상태이상 해제 및 공격력 증가·상태이상 면역(3/3.5/4/4.5/5초 지속) 복합 효과."
+  },
+  {
+    "id": "lynn-lethal-finale",
+    "heroId": "lynn",
+    "name": "죽음의 피날레",
+    "category": "탐험",
+    "description": "순식간에 기회를 포착하고 관통력이 강한 총알을 발사해 경로상의 적에게 공격력* 220%/240%/260%/280%/300%의 피해를 준다.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          220,
+          240,
+          260,
+          280,
+          300
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a6%b0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 경로상 적 대상 공격력 비례 관통 범위 피해."
+  },
+  {
+    "id": "lynn-discordant-tune",
+    "heroId": "lynn",
+    "name": "불협화음",
+    "category": "탐험",
+    "description": "신비롭고 기이한 멜로디로 상대를 현혹시켜 적군 전체 공격 속도를 1%/1.5%/2%/2.5%/3% 감소하고 치료 효과를 40%/45%/50%/55%/60% 감소한다.",
+    "effects": [
+      {
+        "statName": "타깃 공격 속도 감소",
+        "unit": "%",
+        "levels": [
+          1,
+          1.5,
+          2,
+          2.5,
+          3
+        ]
+      },
+      {
+        "statName": "치료 효과 감소",
+        "unit": "%",
+        "levels": [
+          40,
+          45,
+          50,
+          55,
+          60
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a6%b0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 적군 전체 공격 속도 감소(1/1.5/2/2.5/3%) 및 치료 효과 40/45/50/55/60% 감소 복합 효과."
+  },
+  {
+    "id": "lynn-song-of-lion",
+    "heroId": "lynn",
+    "name": "사자의 노래",
+    "category": "원정",
+    "description": "린은 고조된 박자와 멜로디로 사람들을 고무시켜서 40%의 확률로 전체 아군 부대의 피해를 10%/20%/30%/40%/50% 증가시킨다.",
+    "effects": [
+      {
+        "statName": "발동 확률",
+        "unit": "%",
+        "levels": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ]
+      },
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a6%b0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 40% 확률로 전체 아군 부대 피해 증가."
+  },
+  {
+    "id": "lynn-melancholic-ballad",
+    "heroId": "lynn",
+    "name": "슬픈 발라드",
+    "category": "원정",
+    "description": "린이 슬프게 가라앉은 멜로디로 적의 전의를 무너뜨려서 적군 전체 부대의 피해를 4%/8%/12%/16%/20% 감소시킨다.",
+    "effects": [
+      {
+        "statName": "적군 가하는 피해 감소",
+        "unit": "%",
+        "levels": [
+          4,
+          8,
+          12,
+          16,
+          20
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a6%b0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 적군 전체 부대가 주는 피해 감소."
+  },
+  {
+    "id": "lynn-oonai-cadenza",
+    "heroId": "lynn",
+    "name": "카덴차",
+    "category": "원정",
+    "description": "린은 음악의 힘으로 사기를 끌어 올려 병사들이 전투를 거듭할수록 더 용감해지도록 한다. 궁병이 3번 공격할 때마다 자신의 공격력이 1%/2%/3%/4%/5% 향상된다. 이 효과는 중첩되며, 전투가 끝날 때까지 지속된다.",
+    "effects": [
+      {
+        "statName": "공격력 증가",
+        "unit": "%",
+        "levels": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a6%b0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 궁병 3회 공격 시마다 공격력 향상(중첩 가능, 전투 종료 시까지 지속)."
+  },
+  {
+    "id": "hector-sword-whirlwind",
+    "heroId": "hector",
+    "name": "검무",
+    "category": "탐험",
+    "description": "검을 휘두르며 힘차게 춤을 추는 것처럼 공세를 퍼부으면 4초간 공격 속도가 80%/90%/100%/110%/120% 향상되며, 그동안은 빙결, 기절 등의 제어 효과에 면역된다.",
+    "effects": [
+      {
+        "statName": "공격 속도 증가",
+        "unit": "%",
+        "levels": [
+          80,
+          90,
+          100,
+          110,
+          120
+        ]
+      },
+      {
+        "statName": "면역 시간",
+        "unit": "초",
+        "levels": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ed%97%a5%ed%84%b0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 4초간 공격 속도 향상 및 제어 효과 면역."
+  },
+  {
+    "id": "hector-desperado",
+    "heroId": "hector",
+    "name": "필사의 격투",
+    "category": "탐험",
+    "description": "헥터는 치명적인 위험을 겪는 것에 이미 익숙하여, HP가 50% 이하일 경우 받는 피해가 20%/30%/40%/50%/60% 감소한다.",
+    "effects": [
+      {
+        "statName": "받는 피해 감소",
+        "unit": "%",
+        "levels": [
+          20,
+          30,
+          40,
+          50,
+          60
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ed%97%a5%ed%84%b0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. HP 50% 이하 시 받는 피해 감소."
+  },
+  {
+    "id": "hector-adrenaline-surge",
+    "heroId": "hector",
+    "name": "불굴의 용사",
+    "category": "탐험",
+    "description": "역경에 처하면 헥터는 전의가 더욱 자극되며, HP가 50% 이하일 경우 공격력이 16%/24%/32%/40%/48% 향상된다.",
+    "effects": [
+      {
+        "statName": "공격력 증가",
+        "unit": "%",
+        "levels": [
+          16,
+          24,
+          32,
+          40,
+          48
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ed%97%a5%ed%84%b0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. HP 50% 이하 시 공격력 향상."
+  },
+  {
+    "id": "hector-survival-instincts",
+    "heroId": "hector",
+    "name": "생존 본능",
+    "category": "원정",
+    "description": "헥터의 본능에는 이미 생존 기술이 녹아들어 있어 그의 존재만으로 전체 아군 부대가 받는 피해가 40%의 확률로 10%/20%/30%/40%/50% 감소한다.",
+    "effects": [
+      {
+        "statName": "발동 확률",
+        "unit": "%",
+        "levels": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ]
+      },
+      {
+        "statName": "받는 피해 감소",
+        "unit": "%",
+        "levels": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ed%97%a5%ed%84%b0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 40% 확률로 전체 아군 부대가 받는 피해 감소."
+  },
+  {
+    "id": "hector-rampant",
+    "heroId": "hector",
+    "name": "벼락치기",
+    "category": "원정",
+    "description": "헥터는 소대를 이끌고 기습 공격을 가해 상대의 수비진을 무너뜨리고 동시에 궁병에게 일제 사격의 기회를 주는데 능하다. 그가 이끄는 방패병이 주는 피해가 100%/125%/150%/175%/200% 증가하고, 궁병이 주는 피해가 20%/40%/60%/80%/100% 증가한다. 이 효과는 10회 공격에 적용되며, 각 공격의 피해 증가 효과는 이전 공격의 85%로 줄어든다.",
+    "effects": [
+      {
+        "statName": "보병 가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          100,
+          125,
+          150,
+          175,
+          200
+        ]
+      },
+      {
+        "statName": "궁병 가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          20,
+          40,
+          60,
+          80,
+          100
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ed%97%a5%ed%84%b0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 보병 및 궁병 가하는 피해 증가(10회 공격 적용, 공격마다 이전 효과의 85%로 감쇠)."
+  },
+  {
+    "id": "hector-blitz",
+    "heroId": "hector",
+    "name": "기습 강풍",
+    "category": "원정",
+    "description": "헥터는 공격 기술에 정통하여 전체 아군 부대가 공격할 때 25%의 확률로 120%/140%/160%/180%/200%의 피해를 준다.",
+    "effects": [
+      {
+        "statName": "발동 확률",
+        "unit": "%",
+        "levels": [
+          25,
+          25,
+          25,
+          25,
+          25
+        ]
+      },
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          120,
+          140,
+          160,
+          180,
+          200
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ed%97%a5%ed%84%b0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 아군 부대 공격 시 25% 확률로 120/140/160/180/200% 피해."
+  },
+  {
+    "id": "norah-barrage",
+    "heroId": "norah",
+    "name": "분노의 벼락",
+    "category": "탐험",
+    "description": "강력한 수류탄 다섯 개를 동시에 투척하여 랜덤 타깃(영웅 우선)에 공격력*60%/66%/72%/78%/84%의 범위 피해를 준다.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          60,
+          66,
+          72,
+          78,
+          84
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%85%b8%eb%9d%bc/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준 (영어 위키 URL: /heroes/gwen/). 수류탄 5개 동시 투척 무작위 타깃(영웅 우선) 공격력 비례 범위 피해."
+  },
+  {
+    "id": "norah-flashbang",
+    "heroId": "norah",
+    "name": "섬광탄",
+    "category": "탐험",
+    "description": "섬광탄을 투척하여 일정 범위 내의 타깃에 공격력*50%/55%/60%/65%/70% 의 피해를 주고, 1.5초간 기절시킨다.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          50,
+          55,
+          60,
+          65,
+          70
+        ]
+      },
+      {
+        "statName": "기절 시간",
+        "unit": "초",
+        "levels": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%85%b8%eb%9d%bc/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 범위 내 타깃 공격력 비례 피해 및 1.5초간 기절(스턴) 복합 효과."
+  },
+  {
+    "id": "norah-valkyrie-cry",
+    "heroId": "norah",
+    "name": "전광석화",
+    "category": "탐험",
+    "description": "요란한 엔진 소리와 함께 날카로운 공세로 아군 전체 공격력을 3%/3.5%/4%/4.5%/5% 향상시킨다.",
+    "effects": [
+      {
+        "statName": "공격력 증가",
+        "unit": "%",
+        "levels": [
+          3,
+          3.5,
+          4,
+          4.5,
+          5
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%85%b8%eb%9d%bc/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 아군 전체 공격력 향상."
+  },
+  {
+    "id": "norah-combined-arms",
+    "heroId": "norah",
+    "name": "제병 협동 전술",
+    "category": "원정",
+    "description": "다양한 병과와의 협동 작전에 능한 노라의 지휘로 방패병과 궁병이 받는 피해는 3%/6%/9%/12%/15% 감소하고 주는 피해는 3%/6%/9%/12%/15% 증가한다.",
+    "effects": [
+      {
+        "statName": "보병·궁병 받는 피해 감소",
+        "unit": "%",
+        "levels": [
+          3,
+          6,
+          9,
+          12,
+          15
+        ]
+      },
+      {
+        "statName": "보병·궁병 가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          3,
+          6,
+          9,
+          12,
+          15
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%85%b8%eb%9d%bc/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 방패병(보병)과 궁병이 받는 피해 감소 및 가하는 피해 증가."
+  },
+  {
+    "id": "norah-sneak-strike",
+    "heroId": "norah",
+    "name": "기습 공격",
+    "category": "원정",
+    "description": "기습의 명수인 노라는 창병이 공격 시 20%의 확률로 전체 적군에게 20%/40%/60%/80%/100%의 추가 피해를 주도록 한다.",
+    "effects": [
+      {
+        "statName": "발동 확률",
+        "unit": "%",
+        "levels": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          20,
+          40,
+          60,
+          80,
+          100
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%85%b8%eb%9d%bc/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 창병 공격 시 20% 확률로 전체 적군 대상 추가 피해."
+  },
+  {
+    "id": "norah-momentum",
+    "heroId": "norah",
+    "name": "추격 가속",
+    "category": "원정",
+    "description": "노라의 격려를 받은 창병이 5번 공격할 때마다 전체 아군 부대가 주는 피해는 5%/10%/15%/20%/25% 증가하며, 받는 피해는 5%/10%/15%/20%/25% 감소한다. 2라운드 지속.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      },
+      {
+        "statName": "받는 피해 감소",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%85%b8%eb%9d%bc/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 창병 5회 공격마다 전체 아군 부대 가하는 피해 증가 및 받는 피해 감소(2라운드 지속)."
+  },
+  {
+    "id": "gwen-salvo",
+    "heroId": "gwen",
+    "name": "포화 공격",
+    "category": "탐험",
+    "description": "강력한 화력으로 후방의 적군 타깃(영웅 우선)을 폭격하여 공격력*180%/198%/216%/234%/252%의 범위 피해를 주며, 폭발로 인한 진동으로 타깃의 공격 속도를 50% 저하시킨다. 2초간 지속.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          180,
+          198,
+          216,
+          234,
+          252
+        ]
+      },
+      {
+        "statName": "타깃 공격 속도 감소",
+        "unit": "%",
+        "levels": [
+          50,
+          50,
+          50,
+          50,
+          50
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ea%b7%b8%ec%9b%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준 (영어 위키 URL: /heroes/gwen-2/). 후방 적군 타깃(영웅 우선) 범위 피해 및 공격 속도 50% 감소(2초 지속) 복합 효과."
+  },
+  {
+    "id": "gwen-sky-sniper",
+    "heroId": "gwen",
+    "name": "공중 저격",
+    "category": "탐험",
+    "description": "공중에서 넓은 시야를 이용하여 타깃(영웅 우선)을 정밀 사격하고 공격력*100%/110%/120%/130%/140%의 피해를 주며, 50%의 확률로 급소에 명중시켜 두 배의 피해를 준다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          100,
+          110,
+          120,
+          130,
+          140
+        ]
+      },
+      {
+        "statName": "치명타 확률 증가",
+        "unit": "%",
+        "levels": [
+          50,
+          50,
+          50,
+          50,
+          50
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ea%b7%b8%ec%9b%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 정밀 사격 공격력 비례 피해 및 50% 확률 급소 명중(피해 2배)."
+  },
+  {
+    "id": "gwen-hellfire",
+    "heroId": "gwen",
+    "name": "공중 폭격",
+    "category": "탐험",
+    "description": "연소탄을 발사하여 매초 연소 범위 내의 적군 타깃에 공격력*35%/38.5%/42%/45.5%/49%의 피해를 준다. 3초간 지속.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          35,
+          38.5,
+          42,
+          45.5,
+          49
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ea%b7%b8%ec%9b%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 연소탄 발사로 3초간 매초 공격력 비례 지속 피해."
+  },
+  {
+    "id": "gwen-eagle-vision",
+    "heroId": "gwen",
+    "name": "호크아이",
+    "category": "원정",
+    "description": "비행에 능한 그웬은 적의 약점을 정확하게 포착할 수 있기 때문에 아군 전체 부대가 공격할 때 타깃이 받는 피해가 5%/10%/15%/20%/25% 증가한다.",
+    "effects": [
+      {
+        "statName": "목표 받는 피해 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ea%b7%b8%ec%9b%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 아군 부대 공격 시 타깃이 받는 피해 증가."
+  },
+  {
+    "id": "gwen-air-dominance",
+    "heroId": "gwen",
+    "name": "공중 제어",
+    "category": "원정",
+    "description": "그웬은 제공권을 이용해 적을 제압할 수 있기 때문에 전체 아군 부대가 다섯 번 공격할 때마다 다음 공격으로 타깃에 20%/40%/60%/80%/100%의 추가 피해를 주고, 타깃이 다음에 공격당할 때 5%/7.5%/10%/12.5%/15%의 추가 피해를 받도록 한다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          20,
+          40,
+          60,
+          80,
+          100
+        ]
+      },
+      {
+        "statName": "목표 받는 피해 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          7.5,
+          10,
+          12.5,
+          15
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ea%b7%b8%ec%9b%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 5회 공격마다 다음 공격 타깃 추가 피해 및 타깃 피격 시 추가 피해 복합 효과."
+  },
+  {
+    "id": "gwen-blastmaster",
+    "heroId": "gwen",
+    "name": "폭파 소대",
+    "category": "원정",
+    "description": "그웬의 병사들은 수류탄을 장착하고 있어 궁병이 네 번 공격할 때마다 다음 공격으로 적군 전체에 10%/20%/30%/40%/50%의 추가 피해를 준다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ea%b7%b8%ec%9b%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 궁병 4회 공격마다 다음 공격으로 적군 전체 추가 피해."
+  },
+  {
+    "id": "wu-ming-cyclone-barrier",
+    "heroId": "wu-ming",
+    "name": "팔방 찌르기",
+    "category": "탐험",
+    "description": "긴 막대기를 빠르게 휘둘러 바람도 통하지 않는 벽을 만들고 본인을 2초간 무적 상태로 만든 후, 전방을 휩쓸어 공격력*100%/110%/120%/130%/140%의 범위 피해를 준다.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          100,
+          110,
+          120,
+          130,
+          140
+        ]
+      },
+      {
+        "statName": "면역 시간",
+        "unit": "초",
+        "levels": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%ac%b4%eb%aa%85/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 2초간 자신 무적 상태 및 전방 공격력 비례 범위 피해 복합 효과."
+  },
+  {
+    "id": "wu-ming-inner-clarity",
+    "heroId": "wu-ming",
+    "name": "정신 집중",
+    "category": "탐험",
+    "description": "잡념을 몰아내고 싸움에 전념해 본인의 공격력 8%/12%/16%/20%/24%, 방어력 16%/24%/32%/40%/48%를 증가시킨다. 4초간 지속.",
+    "effects": [
+      {
+        "statName": "공격력 증가",
+        "unit": "%",
+        "levels": [
+          8,
+          12,
+          16,
+          20,
+          24
+        ]
+      },
+      {
+        "statName": "방어력 증가",
+        "unit": "%",
+        "levels": [
+          16,
+          24,
+          32,
+          40,
+          48
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%ac%b4%eb%aa%85/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 4초간 공격력 및 방어력 증가."
+  },
+  {
+    "id": "wu-ming-remote-impact",
+    "heroId": "wu-ming",
+    "name": "기공 강타",
+    "category": "탐험",
+    "description": "깊은 내공으로 무명의 공격 하나하나에 관통력을 부여하며, 일반 공격 시마다 랜덤 적군에게 공격력*20%/22%/24%/26%/28%의 피해를 준다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          20,
+          22,
+          24,
+          26,
+          28
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%ac%b4%eb%aa%85/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 일반 공격 시 무작위 적군에게 공격력 비례 추가 피해."
+  },
+  {
+    "id": "wu-ming-shadows-evasion",
+    "heroId": "wu-ming",
+    "name": "바람 피하기",
+    "category": "원정",
+    "description": "무명은 적의 공격을 어떻게 피하고 와해시켜야 하는지 매우 잘 알고 있어서 방패병이 받는 일반 공격의 피해가 5%/10%/15%/20%/25% 감소하고, 받는 스킬 피해가 6%/12%/18%/24%/30% 감소한다.",
+    "effects": [
+      {
+        "statName": "보병 받는 일반 피해 감소",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      },
+      {
+        "statName": "보병 받는 스킬 피해 감소",
+        "unit": "%",
+        "levels": [
+          6,
+          12,
+          18,
+          24,
+          30
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%ac%b4%eb%aa%85/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 보병(방패병)이 받는 일반 공격 피해 및 스킬 피해 감소. (한국어 위키의 스킬 피해 Lv.4 34% 오기는 영어 원문 24%로 보정)"
+  },
+  {
+    "id": "wu-ming-crescent-uplift",
+    "heroId": "wu-ming",
+    "name": "솟아오른 반달",
+    "category": "원정",
+    "description": "무명은 병사들에게 비법을 전수하여 전체 아군 부대가 주는 모든 피해를 4%/8%/12%/16%/20% 증가시킨다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          4,
+          8,
+          12,
+          16,
+          20
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%ac%b4%eb%aa%85/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 아군 부대가 가하는 피해 증가."
+  },
+  {
+    "id": "wu-ming-elemental-resonance",
+    "heroId": "wu-ming",
+    "name": "완벽한 이해",
+    "category": "원정",
+    "description": "무명은 가르침을 통해 아군의 전투 기술에 대한 이해도를 높이고, 전체 아군 부대가 주는 스킬 피해를 5%/10%/15%/20%/25% 증가시킨다.",
+    "effects": [
+      {
+        "statName": "가하는 스킬 피해 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%ac%b4%eb%aa%85/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 아군 부대가 가하는 스킬 피해 증가."
+  },
+  {
+    "id": "renee-illusion-cloud",
+    "heroId": "renee",
+    "name": "환각의 구름",
+    "category": "탐험",
+    "description": "공이 터지며 신비한 안개를 퍼트려 범위 내의 적에게 공격력* 100%/110%/120%/130%/140%의 피해를 주고 1초간 혼란을 일으킨다. 혼란 상태의 적은 적과 아군을 가리지 않고 주변 타깃을 무차별 공격한다.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          100,
+          110,
+          120,
+          130,
+          140
+        ]
+      },
+      {
+        "statName": "행동 불가 시간",
+        "unit": "초",
+        "levels": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a0%88%eb%8b%88/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 범위 내 적에게 공격력 비례 피해 및 1초간 혼란(피아 무차별 공격) 복합 효과."
+  },
+  {
+    "id": "renee-starpaint",
+    "heroId": "renee",
+    "name": "별하늘 칠하기",
+    "category": "탐험",
+    "description": "몽환적인 물감을 뿌려 범위 내 타깃에게 공격력* 50%/55%/60%/65%/70% 의 피해를 주고, 별 그림 표식을 부여하여 타깃이 받는 피해를 2%/3%/4%/5%/6% 증가시킨다. 4초간 지속.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          50,
+          55,
+          60,
+          65,
+          70
+        ]
+      },
+      {
+        "statName": "목표 받는 피해 증가",
+        "unit": "%",
+        "levels": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a0%88%eb%8b%88/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 범위 내 타깃 공격력 비례 피해 및 별 표식 부여로 타깃이 받는 피해 증가(4초 지속)."
+  },
+  {
+    "id": "renee-dream-vision",
+    "heroId": "renee",
+    "name": "꿈의 세계",
+    "category": "탐험",
+    "description": "별 그림 표식을 지닌 타깃은 레니의 시야에서 벗어날 수 없다. 표식이 있는 동안은 레니의 공격력이 8%/12%/16%/20%/24% 향상되며, 표식을 지닌 타깃에게 주는 피해가 4%/6%/8%/10%/12% 증가한다.",
+    "effects": [
+      {
+        "statName": "공격력 증가",
+        "unit": "%",
+        "levels": [
+          8,
+          12,
+          16,
+          20,
+          24
+        ]
+      },
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          4,
+          6,
+          8,
+          10,
+          12
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a0%88%eb%8b%88/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 별 표식 타깃 존재 시 레니 공격력 증가 및 해당 타깃 대상 가하는 피해 증가."
+  },
+  {
+    "id": "renee-nightmare-trace",
+    "heroId": "renee",
+    "name": "꿈의 흉터",
+    "category": "원정",
+    "description": "레니는 언제나 불가사의한 방법으로 싸운다. 창병은 2라운드마다 타깃에 꿈의 흔적을 부여하며, 다음 라운드에 40%/80%/120%/160%/200%의 창병 피해를 1회 추가로 가한다. 꿈의 흔적은 1라운드 간 지속된다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          40,
+          80,
+          120,
+          160,
+          200
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a0%88%eb%8b%88/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 2라운드마다 타깃에 꿈의 흔적 부여 후 다음 라운드 창병 추가 피해."
+  },
+  {
+    "id": "renee-dreamcatcher",
+    "heroId": "renee",
+    "name": "꿈 포획자",
+    "category": "원정",
+    "description": "레니는 꿈의 흔적을 통해 적의 약점을 정확하게 간파할 수 있으며, 창병이 꿈의 흔적을 지닌 타깃에게 주는 피해를 30%/60%/90%/120%/150% 증가시킨다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          30,
+          60,
+          90,
+          120,
+          150
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a0%88%eb%8b%88/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 창병이 꿈의 흔적 타깃에게 가하는 피해 증가."
+  },
+  {
+    "id": "renee-dreamslice",
+    "heroId": "renee",
+    "name": "꿈 세계의 파편",
+    "category": "원정",
+    "description": "꿈의 흔적은 적의 약점을 더 잘 드러나게 하여 전체 아군 부대가 꿈의 흔적을 지닌 타깃에게 주는 피해를 15%/30%/45%/60%/75% 증가시킨다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          15,
+          30,
+          45,
+          60,
+          75
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%a0%88%eb%8b%88/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 아군 부대가 꿈의 흔적 타깃에게 가하는 피해 증가."
+  },
+  {
+    "id": "wayne-hurricane-blowback",
+    "heroId": "wayne",
+    "name": "회오리 선풍",
+    "category": "탐험",
+    "description": "부메랑을 던져 전방의 직선상의 적에게 공격력*100%/110%/120%/130%/140%의 범위 피해를 주며, 부메랑이 돌아올 때도 경로상의 타깃에게 동일한 피해를 준다.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          100,
+          110,
+          120,
+          130,
+          140
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%9b%a8%ec%9d%b8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전방 직선 및 복귀 시 경로상 적에게 공격력 비례 왕복 범위 피해."
+  },
+  {
+    "id": "wayne-phantom-blitz",
+    "heroId": "wayne",
+    "name": "환영의 일격",
+    "category": "탐험",
+    "description": "웨인은 평범한 사람은 알아채기조차 힘들 정도로 빠르게 총을 뽑아서 쏠 수 있다. 일반 공격 시 15%/20%/25%/30%/35%의 확률로 빠르게 다시 공격을 가해 타깃에 추가 피해를 한 번 더 준다.",
+    "effects": [
+      {
+        "statName": "발동 확률",
+        "unit": "%",
+        "levels": [
+          15,
+          20,
+          25,
+          30,
+          35
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%9b%a8%ec%9d%b8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 일반 공격 시 확률로 추가 일반 공격 1회 발동."
+  },
+  {
+    "id": "wayne-noon-time",
+    "heroId": "wayne",
+    "name": "바로 지금!",
+    "category": "탐험",
+    "description": "웨인의 사격술은 신의 경지에 이르러 피해를 줄 때 3%/6%/9%/12%/15%의 확률로 치명타를 입힌다.",
+    "effects": [
+      {
+        "statName": "치명타 확률 증가",
+        "unit": "%",
+        "levels": [
+          3,
+          6,
+          9,
+          12,
+          15
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%9b%a8%ec%9d%b8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 피해 시 치명타 확률 증가."
+  },
+  {
+    "id": "wayne-thunder-strike",
+    "heroId": "wayne",
+    "name": "번개 같은 기습",
+    "category": "원정",
+    "description": "웨인은 정교한 습격 계획을 세워 전체 아군 부대가 4라운드마다 타깃에게 추가 공격을 1번씩 가하고 20%/40%/60%/80%/100%의 피해를 주도록 한다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          20,
+          40,
+          60,
+          80,
+          100
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%9b%a8%ec%9d%b8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 4라운드마다 전체 아군 부대 추가 공격 1회 및 피해."
+  },
+  {
+    "id": "wayne-roundabout-hit",
+    "heroId": "wayne",
+    "name": "우회 타격",
+    "category": "원정",
+    "description": "웨인은 방어선을 우회하는 전술로 상대의 허를 찌르는 것에 능하다. 궁병은 2회 공격할 때마다 적군 창병에게 8%/16%/24%/32%/40%의 추가 피해를 주고 적군 궁병에게 4%/8%/12%/16%/20%의 추가 피해를 준다.",
+    "effects": [
+      {
+        "statName": "적군 창병 대상 추가 피해",
+        "unit": "%",
+        "levels": [
+          8,
+          16,
+          24,
+          32,
+          40
+        ]
+      },
+      {
+        "statName": "적군 궁병 대상 추가 피해",
+        "unit": "%",
+        "levels": [
+          4,
+          8,
+          12,
+          16,
+          20
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%9b%a8%ec%9d%b8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 궁병 2회 공격마다 적군 창병 및 궁병 대상 추가 피해."
+  },
+  {
+    "id": "wayne-fleet",
+    "heroId": "wayne",
+    "name": "전광석화",
+    "category": "원정",
+    "description": "웨인은 날카로운 통찰력으로 상대의 약점이 드러날 때마다 포착하여 전체 아군 부대가 일반 공격을 할 때 5%/10%/15%/20%/25%의 확률로 치명타 피해를 주도록 한다.",
+    "effects": [
+      {
+        "statName": "치명타 확률 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%9b%a8%ec%9d%b8/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 아군 부대 일반 공격 시 치명타 확률 증가."
+  },
+  {
+    "id": "edith-ironclad-punch",
+    "heroId": "edith",
+    "name": "분노의 철권",
+    "category": "탐험",
+    "description": "미스터 아이언은 에디스를 해치려는 나쁜 놈들에게 맹공을 가한다. 그가 휘두르는 철권은 전방의 부채꼴 범위 내 적에게 공격력*100/110/120/130/140%의 피해를 주고 1초간 기절시키며, 자신의 공격력이 20%/40%/60%/80%/100% 상승한다. 2초간 지속.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          100,
+          110,
+          120,
+          130,
+          140
+        ]
+      },
+      {
+        "statName": "기절 시간",
+        "unit": "초",
+        "levels": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "statName": "공격력 증가",
+        "unit": "%",
+        "levels": [
+          20,
+          40,
+          60,
+          80,
+          100
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%97%90%eb%94%94%ec%8a%a4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전방 부채꼴 범위 공격력 비례 피해, 1초간 기절 및 2초간 자신 공격력 상승 복합 효과."
+  },
+  {
+    "id": "edith-escape-capsule",
+    "heroId": "edith",
+    "name": "긴급 탈출",
+    "category": "탐험",
+    "description": "HP가 0이 되면 미스터 아이언은 핵심 부품을 발사하고 에디스를 호위하여 탈출시킨다. 그리고 몸에 남은 부품을 폭파해 주위의 적에게 공격력*200%/220%/240%/260%/280%의 피해를 준다.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          200,
+          220,
+          240,
+          260,
+          280
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%97%90%eb%94%94%ec%8a%a4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. HP 0 도달 시 자폭하여 주변 적에게 공격력 비례 피해."
+  },
+  {
+    "id": "edith-preemptive-alerts",
+    "heroId": "edith",
+    "name": "위기 예측",
+    "category": "탐험",
+    "description": "에디스는 항상 전장을 관찰하여 미스터 아이언이 제때 위험을 막을 수 있도록 알리고 그가 받는 피해를 10%/20%/30%/40%/50%의 확률로 50% 감소시킨다.",
+    "effects": [
+      {
+        "statName": "발동 확률",
+        "unit": "%",
+        "levels": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      },
+      {
+        "statName": "받는 피해 감소",
+        "unit": "%",
+        "levels": [
+          50,
+          50,
+          50,
+          50,
+          50
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%97%90%eb%94%94%ec%8a%a4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 확률로 피격 피해 50% 감소."
+  },
+  {
+    "id": "edith-strategic-balance",
+    "heroId": "edith",
+    "name": "공수 겸비",
+    "category": "원정",
+    "description": "미스터 아이언은 거대한 체구로 원거리 부대를 엄호하여 아군 궁병이 받는 피해를 4/8/12/16/20% 감소시킨다. 또한 압도적인 힘으로 아군 창병의 공격 기회를 늘려 창병이 주는 피해를 4/8/12/16/20% 증가시킨다.",
+    "effects": [
+      {
+        "statName": "궁병 받는 피해 감소",
+        "unit": "%",
+        "levels": [
+          4,
+          8,
+          12,
+          16,
+          20
+        ]
+      },
+      {
+        "statName": "창병 가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          4,
+          8,
+          12,
+          16,
+          20
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%97%90%eb%94%94%ec%8a%a4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 아군 궁병이 받는 피해 감소 및 창병이 가하는 피해 증가."
+  },
+  {
+    "id": "edith-ironclad",
+    "heroId": "edith",
+    "name": "용감무쌍",
+    "category": "원정",
+    "description": "단단한 몸으로 함께 방어선을 구축한 전우들을 엄호하여 방패병이 입는 피해를 4/8/12/16/20% 감소시킨다.",
+    "effects": [
+      {
+        "statName": "보병 받는 피해 감소",
+        "unit": "%",
+        "levels": [
+          4,
+          8,
+          12,
+          16,
+          20
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%97%90%eb%94%94%ec%8a%a4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 아군 보병(방패병)이 받는 피해 감소."
+  },
+  {
+    "id": "edith-steel-sentinel",
+    "heroId": "edith",
+    "name": "아이언 가드",
+    "category": "원정",
+    "description": "에디스가 만든 휴대용 방어 장치는 정밀하고 든든하여 전체 아군 부대 HP를 5/10/15/20/25% 증가시킨다.",
+    "effects": [
+      {
+        "statName": "부대 HP 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ec%97%90%eb%94%94%ec%8a%a4/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 아군 부대 HP 증가."
+  },
+  {
+    "id": "gordon-poison-blast",
+    "heroId": "gordon",
+    "name": "맹독 폭발",
+    "category": "탐험",
+    "description": "거대한 독액 탱크를 발사하고 산산조각 낸 후, 휘발된 가스로 3초간 독가스 영역을 형성하여 0.5초마다 영역 내 타깃에 공격력*50/55/60/65/70%의 피해를 준다.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          50,
+          55,
+          60,
+          65,
+          70
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ea%b3%a0%eb%93%a0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 독가스 영역 형성으로 3초간 0.5초마다 공격력 비례 피해."
+  },
+  {
+    "id": "gordon-toxic-molotov",
+    "heroId": "gordon",
+    "name": "독액병",
+    "category": "탐험",
+    "description": "독액병을 정확하게 투척하여 타깃을 중독 상태로 만들고 0.5초마다 타깃에 공격력*25/27.5/30/32.5/35%의 피해를 주며, 타깃이 입는 피해를 5/10/15/20/25% 증가시킨다. 2초간 지속.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          25,
+          27.5,
+          30,
+          32.5,
+          35
+        ]
+      },
+      {
+        "statName": "목표 받는 피해 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ea%b3%a0%eb%93%a0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 2초간 0.5초마다 타깃 중독 지속 피해 및 타깃이 받는 피해 증가 복합 효과."
+  },
+  {
+    "id": "gordon-tolerization",
+    "heroId": "gordon",
+    "name": "체질 악화",
+    "category": "탐험",
+    "description": "고든의 목숨을 앗아가지 못한 맹독이 오히려 그의 체질을 변화시켜 고든의 방어력이 25/37.5/50/62.5/75% 상승한다.",
+    "effects": [
+      {
+        "statName": "방어력 증가",
+        "unit": "%",
+        "levels": [
+          25,
+          37.5,
+          50,
+          62.5,
+          75
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ea%b3%a0%eb%93%a0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 고든의 방어력 상승."
+  },
+  {
+    "id": "gordon-venom-infusion",
+    "heroId": "gordon",
+    "name": "독을 바른 칼날",
+    "category": "원정",
+    "description": "창병의 무기에 독액을 발라 2회 공격 시마다 20/40/60/80/100%의 추가 피해를 주고, 1라운드 간 타깃을 중독시킨다. 중독 상태일 때는 타깃이 주는 피해가 4/8/12/16/20% 감소한다.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          20,
+          40,
+          60,
+          80,
+          100
+        ]
+      },
+      {
+        "statName": "적군 가하는 피해 감소",
+        "unit": "%",
+        "levels": [
+          4,
+          8,
+          12,
+          16,
+          20
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ea%b3%a0%eb%93%a0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 창병 2회 공격마다 추가 피해 및 1라운드간 타깃 중독(타깃이 가하는 피해 감소)."
+  },
+  {
+    "id": "gordon-chemical-terror",
+    "heroId": "gordon",
+    "name": "독극물 공포증",
+    "category": "원정",
+    "description": "장창에 독액을 바르는 전술은 적의 간담을 서늘하게 하고 3라운드마다 사기를 떨어뜨려 아군 창병이 주는 피해는 30/60/90/120/150% 증가하고 적군 전체 부대가 주는 피해는 6/12/18/24/30% 감소한다. 1라운드 간 지속.",
+    "effects": [
+      {
+        "statName": "창병 가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          30,
+          60,
+          90,
+          120,
+          150
+        ]
+      },
+      {
+        "statName": "적군 가하는 피해 감소",
+        "unit": "%",
+        "levels": [
+          6,
+          12,
+          18,
+          24,
+          30
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ea%b3%a0%eb%93%a0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 3라운드마다 1라운드간 아군 창병 피해 증가 및 적군 전체 부대 가하는 피해 감소."
+  },
+  {
+    "id": "gordon-toxic-release",
+    "heroId": "gordon",
+    "name": "맹독성 운무",
+    "category": "원정",
+    "description": "고든의 특수 전술은 4라운드마다 독가스 안개를 생성해 선두에 선 적군 방패병을 무기력하게 만들며, 받는 피해를 6/12/18/24/30% 증가시킨다. 또한 안개로 적군 궁병의 시야를 가려 그들이 주는 피해를 6/12/15/24/30% 감소시킨다. 2라운드 간 지속.",
+    "effects": [
+      {
+        "statName": "적군 보병 받는 피해 증가",
+        "unit": "%",
+        "levels": [
+          6,
+          12,
+          18,
+          24,
+          30
+        ]
+      },
+      {
+        "statName": "적군 궁병 가하는 피해 감소",
+        "unit": "%",
+        "levels": [
+          6,
+          12,
+          15,
+          24,
+          30
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%ea%b3%a0%eb%93%a0/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 4라운드마다 2라운드간 적군 보병 받는 피해 증가 및 적군 궁병 가하는 피해 감소 (Lv.3 수치는 한·영 위키 공통 15%)."
+  },
+  {
+    "id": "bradley-destructor",
+    "heroId": "bradley",
+    "name": "파멸의 중포",
+    "category": "탐험",
+    "description": "중포를 파괴 모드로 전환하고 엄청난 위력의 포탄을 발사하여 공격력*300/330/360/390/420%의 범위 피해를 준다.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          300,
+          330,
+          360,
+          390,
+          420
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%b8%8c%eb%a0%88%eb%93%a4%eb%a6%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 공격력 비례 포탄 범위 피해."
+  },
+  {
+    "id": "bradley-incendiary-shell",
+    "heroId": "bradley",
+    "name": "연소탄",
+    "category": "탐험",
+    "description": "특수 포탄을 발사하여 타깃에 공격력*60/66/72/78/84%의 범위 피해를 주고 연소탄 구덩이를 하나 남긴다. 구덩이는 2초간 존재하며 0.5초마다 구덩이 안의 적에게 공격력*17/19/21/23/25%의 피해를 준다.",
+    "effects": [
+      {
+        "statName": "주는 범위 피해 증가",
+        "unit": "%",
+        "levels": [
+          60,
+          66,
+          72,
+          78,
+          84
+        ]
+      },
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          17,
+          19,
+          21,
+          23,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%b8%8c%eb%a0%88%eb%93%a4%eb%a6%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 범위 피해 및 2초간 0.5초마다 연소 구덩이 지속 피해 복합 효과."
+  },
+  {
+    "id": "bradley-audacious",
+    "heroId": "bradley",
+    "name": "불굴의 장수",
+    "category": "탐험",
+    "description": "백전노장인 브레들리는 위험에 굴복하지 않으며 공격력이 10/14/18/22/26% 상승한다.",
+    "effects": [
+      {
+        "statName": "공격력 증가",
+        "unit": "%",
+        "levels": [
+          10,
+          14,
+          18,
+          22,
+          26
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%b8%8c%eb%a0%88%eb%93%a4%eb%a6%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 공격력 상승."
+  },
+  {
+    "id": "bradley-veterans-might",
+    "heroId": "bradley",
+    "name": "노병의 긍지",
+    "category": "원정",
+    "description": "브레들리는 풍부한 작전 경험을 통해 적을 가장 효율적으로 파괴하는 방법을 터득했으며, 그의 지휘 능력 덕에 전체 아군 부대의 공격력이 5/10/15/20/25% 상승한다.",
+    "effects": [
+      {
+        "statName": "공격력 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%b8%8c%eb%a0%88%eb%93%a4%eb%a6%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 아군 부대 공격력 상승."
+  },
+  {
+    "id": "bradley-power-shot",
+    "heroId": "bradley",
+    "name": "헤드 어택",
+    "category": "원정",
+    "description": "브레들리는 포화로 적군의 전열을 흐트러뜨리는 데 능하며, 전체 아군 부대의 창병에 대한 피해를 6/12/18/24/30%, 방패병에 대한 피해를 5/10/15/20/25% 증가시킨다.",
+    "effects": [
+      {
+        "statName": "창병 가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          6,
+          12,
+          18,
+          24,
+          30
+        ]
+      },
+      {
+        "statName": "보병 가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%b8%8c%eb%a0%88%eb%93%a4%eb%a6%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 전체 아군 부대의 적군 창병 및 방패병(보병) 대상 피해 증가."
+  },
+  {
+    "id": "bradley-tactical-assistance",
+    "heroId": "bradley",
+    "name": "전세 파악",
+    "category": "원정",
+    "description": "브레들리는 적군이 방심한 틈을 놓치지 않고 4라운드마다 전체 아군 부대가 주는 피해를 6/12/18/24/30% 증가시킨다. 2라운드 지속.",
+    "effects": [
+      {
+        "statName": "가하는 피해 증가",
+        "unit": "%",
+        "levels": [
+          6,
+          12,
+          18,
+          24,
+          30
+        ]
+      }
+    ],
+    "sourceUrl": "https://www.whiteoutsurvival.wiki/ko/heroes/%eb%b8%8c%eb%a0%88%eb%93%a4%eb%a6%ac/",
+    "verificationStatus": "위키 기준",
+    "verificationBadgeText": "위키 기준",
+    "evidence": "Whiteout Survival 위키 기준.",
+    "verificationDate": "2026-10-17",
+    "notes": "Whiteout Survival 위키 기준. 4라운드마다 2라운드간 전체 아군 부대가 가하는 피해 증가."
   }
 ]

@@ -225,5 +225,125 @@
     "subtype": "전투형",
     "generation": 3,
     "imageUrl": "/assets/heroes/hero_greg.png"
+  },
+  {
+    "id": "ahmose",
+    "nameKo": "아모세",
+    "nameEn": "Ahmose",
+    "rarity": "레전드",
+    "troopType": "보병",
+    "subtype": "전투형",
+    "generation": 4,
+    "imageUrl": "/assets/heroes/hero_ahmose.png"
+  },
+  {
+    "id": "reina",
+    "nameKo": "레이나",
+    "nameEn": "Reina",
+    "rarity": "레전드",
+    "troopType": "창병",
+    "subtype": "전투형",
+    "generation": 4,
+    "imageUrl": "/assets/heroes/hero_reina.jpg"
+  },
+  {
+    "id": "lynn",
+    "nameKo": "린",
+    "nameEn": "Lynn",
+    "rarity": "레전드",
+    "troopType": "궁병",
+    "subtype": "전투형",
+    "generation": 4,
+    "imageUrl": "/assets/heroes/hero_lynn.jpg"
+  },
+  {
+    "id": "hector",
+    "nameKo": "헥터",
+    "nameEn": "Hector",
+    "rarity": "레전드",
+    "troopType": "보병",
+    "subtype": "전투형",
+    "generation": 5,
+    "imageUrl": "/assets/heroes/hero_hector.jpg"
+  },
+  {
+    "id": "norah",
+    "nameKo": "노라",
+    "nameEn": "Norah",
+    "rarity": "레전드",
+    "troopType": "창병",
+    "subtype": "전투형",
+    "generation": 5,
+    "imageUrl": "/assets/heroes/hero_norah.jpg"
+  },
+  {
+    "id": "gwen",
+    "nameKo": "그웬",
+    "nameEn": "Gwen",
+    "rarity": "레전드",
+    "troopType": "궁병",
+    "subtype": "전투형",
+    "generation": 5,
+    "imageUrl": "/assets/heroes/hero_gwen.jpg"
+  },
+  {
+    "id": "wu-ming",
+    "nameKo": "무명",
+    "nameEn": "Wu Ming",
+    "rarity": "레전드",
+    "troopType": "보병",
+    "subtype": "전투형",
+    "generation": 6,
+    "imageUrl": "/assets/heroes/hero_wu_ming.jpg"
+  },
+  {
+    "id": "renee",
+    "nameKo": "레니",
+    "nameEn": "Renee",
+    "rarity": "레전드",
+    "troopType": "창병",
+    "subtype": "전투형",
+    "generation": 6,
+    "imageUrl": "/assets/heroes/hero_renee.jpg"
+  },
+  {
+    "id": "wayne",
+    "nameKo": "웨인",
+    "nameEn": "Wayne",
+    "rarity": "레전드",
+    "troopType": "궁병",
+    "subtype": "전투형",
+    "generation": 6,
+    "imageUrl": "/assets/heroes/hero_wayne.jpg"
+  },
+  {
+    "id": "edith",
+    "nameKo": "에디스",
+    "nameEn": "Edith",
+    "rarity": "레전드",
+    "troopType": "보병",
+    "subtype": "전투형",
+    "generation": 7,
+    "imageUrl": "/assets/heroes/hero_edith.jpg"
+  },
+  {
+    "id": "gordon",
+    "nameKo": "고든",
+    "nameEn": "Gordon",
+    "rarity": "레전드",
+    "troopType": "창병",
+    "subtype": "전투형",
+    "generation": 7,
+    "imageUrl": "/assets/heroes/hero_gordon.jpg"
+  },
+  {
+    "id": "bradley",
+    "nameKo": "브레들리",
+    "nameEn": "Bradley",
+    "rarity": "레전드",
+    "troopType": "궁병",
+    "subtype": "전투형",
+    "generation": 7,
+    "imageUrl": "/assets/heroes/hero_bradley.jpg"
   }
 ]
